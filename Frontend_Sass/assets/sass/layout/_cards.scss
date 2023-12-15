@@ -1,0 +1,105 @@
+@use '../base/variables' as v;
+@use '../base/theme' as t;
+@use '../base/mixins' as m;
+
+#what-can-you-see{
+    @include m.flexbox(center, center, column);
+    gap: 2rem;
+    color: t.$text-color;
+    h3{
+        font-family: t.$title-font;
+        font-size: 2rem;
+    }
+    .cards-container{
+        @include m.flexbox(center, center, row);
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        min-width: 100%;
+        padding: 1rem 0.5rem;
+        article:nth-child(-n+3){
+            @include m.flexbox(center, center, row);
+            gap: 1rem;
+            width: 30%;
+            padding: 0.2rem;
+            figure{
+                min-width: 5rem;
+                img{
+                    max-width: 100%;
+                }
+            }
+            @include m.maxTablet{
+                flex-direction: column;
+                min-width: 45%;
+                figure{
+                    max-width: 3rem;
+                }
+            }
+            @include m.phone{
+                flex-direction: column;
+                min-width: 100%;
+                figure{
+                    max-width: 3rem;
+                }
+            }
+
+        }
+        article:nth-child(n+3):not(:nth-child(-n+3)){
+            @include m.flexbox(center, center, row-reverse);
+            
+            gap: 1rem;
+            max-width: 30%;
+            padding: 0.2rem;
+            figure{
+                min-width: 5rem;
+                img{
+                    max-width: 100%;
+                }
+            }
+            @include m.maxTablet{
+                flex-direction: column;
+                flex-direction: column;
+                min-width: 45%;
+                figure{
+                    max-width: 3rem;
+                }
+            }
+            @include m.phone{
+                flex-direction: column;
+                min-width: 100%;
+                figure{
+                    max-width: 3rem;
+                }
+            }
+        }
+        
+        article{
+            .info{
+                @include m.flexbox(center, center, column);
+                gap: 1rem;
+                padding: 0.5rem;
+                h4{
+                    font-family: t.$title-font;
+                    font-size: 1.5rem;
+                }
+                p{
+                    text-align: justify;
+                    font-family: t.$text-font;
+                }
+            }
+
+            &:hover{
+                border-left: 1px solid t.$text-color;
+                border-right: 1px solid t.$text-color;
+                cursor: pointer;
+                transition: 500ms;
+            }
+
+            &:hover .info{
+                border-radius: 0 0.5rem;
+                background-color: t.$text-color;
+                color: t.$primary-color;
+                transition: 500ms;
+            }
+        }
+    }
+}

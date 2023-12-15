@@ -1,0 +1,65 @@
+@use '../base/variables' as v;
+@use '../base/theme' as t;
+@use '../base/mixins' as m;
+
+#photos-showcase{
+    background-image: url(/assets/images/main-pattern-dark.png);
+    @include m.flexbox(center, center, column);
+    gap: 1.5rem;
+    max-width: 100vw;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    color: t.$text-color;
+    h3{
+        font-family: t.$title-font;
+        font-size: 2rem
+    }
+    .photo-set{
+        /* @include m.grid(6, 0); */
+
+        @include m.flexbox(center, stretch, row);
+        flex-wrap: nowrap;
+        height: 50vh;
+
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        figure{
+            min-width: 0;
+            flex: 1 0;  
+
+            @include m.flexbox(flex-start, flex-start, column);
+            overflow: hidden;
+            position: relative;
+
+            transition: all ease-in-out 250ms;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            span{
+                max-width: 0px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: #fff;
+                color: t.$primary-color-dark;
+
+                overflow: hidden;
+            }
+
+            &:hover{
+                min-width: 60%;
+                
+                span{
+                    padding: 0.5rem ;
+                    max-width: 100%;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use '../base/variables' as v;
+@use '../base/theme' as t;
+@use '../base/mixins' as m;
+
+body{
+    background-image: url(/assets/images/main-pattern.png);
+}

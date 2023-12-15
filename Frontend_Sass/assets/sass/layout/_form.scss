@@ -1,0 +1,101 @@
+@use '../base/variables' as v;
+@use '../base/theme' as t;
+@use '../base/mixins' as m;
+
+#contact-us{
+    @include m.flexbox(center, center, column);
+    gap: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    color: t.$text-color;color: t.$text-color;
+    h3{
+        font-family: t.$title-font;
+        font-size: 2rem;
+    }
+
+    form{
+        display: grid;
+        grid-template-rows: repeat(4, 0.5fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        border-radius: 1rem;
+        min-width: 50%;
+        padding: 1rem 0rem;
+        background-image: url(/assets/images/main-pattern-dark.png);
+        @include m.maxTablet{
+            min-width: 90%;
+            padding: 1rem 1rem;
+        }
+        @include m.phone{
+            min-width: 90%;
+            padding: 1rem 1rem;
+        }
+        .input-group{
+            @include m.flexbox(flex-start, flex-start, column);
+            gap: 0.3rem;
+            min-width: 90%;
+            margin: 0 auto;
+            font-family: t.$title-font;
+            @include m.phone{
+                margin: 0;
+            }
+            input{
+                min-width: 100%;
+                min-height: 2.5rem;
+                padding: 0 1rem;
+                border-radius: 0.5rem;
+                border: none;
+                background-color: t.$light-backdrop-color;
+                color: t.$text-color;
+                font-family: t.$text-font;
+                font-size: 1rem;
+
+                &::placeholder{
+                    color: t.$text-color;
+                }
+
+                &:focus{
+                    outline: none;
+                    background-color: t.$text-color;
+                    color: t.$primary-color;
+                }
+            }
+            textarea{
+                padding: 0.5rem 1rem;
+                min-width: 100%;
+                resize: none;
+                border-radius: 0.5rem;
+                border: none;
+                background-color: t.$light-backdrop-color;
+                color: t.$text-color;
+                font-family: t.$text-font;
+                font-size: 1rem;
+                &:focus{
+                    outline: none;
+                    background-color: t.$text-color;
+                    color: t.$primary-color;
+                }
+            }
+
+            button{
+                align-self: end;
+                padding: 1rem 1.5rem;
+                border-radius: 0.5rem;
+                border: none;
+                background-color: t.$light-backdrop-color;
+                color: t.$text-color;
+
+                &:hover{
+                    background-color: t.$text-color;
+                    color: t.$primary-color;
+                    cursor: pointer;
+                    transition: 250ms;
+                }
+                @include m.phone{
+                    height: 100%;
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}

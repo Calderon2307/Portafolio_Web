@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+
+@mixin phone {
+    @media (max-width: v.$device-phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$device-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$device-desktop) {
+        @content;
+    }
+}
+
+@mixin maxTablet {
+    @media (max-width: v.$device-tablet) {
+        @content;
+    }
+}
+
+@mixin maxDesktop {
+    @media (max-width: v.$device-maxDesktop) {
+        @content;
+    }
+}
+
+@mixin grid($columns, $spacing) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $spacing;
+}
+
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

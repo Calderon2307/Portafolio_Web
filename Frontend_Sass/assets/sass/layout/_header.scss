@@ -1,0 +1,143 @@
+@use '../base/variables' as v;
+@use '../base/theme' as t;
+@use '../base/mixins' as m;
+
+header {
+    @include m.flexbox(space-between, center, column);
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/assets/images/bg-pattern.png);
+    color: t.$text-color;
+
+    .main-bar {
+        @include m.flexbox(space-between, center, row);
+        width: 100%;
+        padding: 1rem 1rem;
+
+        h1 {
+            font-family: t.$logo-font;
+        }
+
+        nav {
+            ul {
+                @include m.flexbox();
+                gap: 1rem;
+
+                li:not(.highlight) {
+                    a {
+
+                        text-decoration: none;
+                        font-family: t.$item-font;
+                        color: t.$text-color;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background-color: t.$text-color;
+                            visibility: hidden;
+                        }
+                    }
+
+                    &:not(li.highlight):hover a::after {
+                        visibility: visible;
+                        animation-name: link;
+                        animation-duration: 500ms;
+                        animation-timing-function: ease-in-out;
+                    }
+
+
+                }
+
+                .highlight {
+
+                    a {
+                        padding: 1rem 1.5rem;
+                        border-radius: 0.5rem;
+                        background-color: t.$light-backdrop-color;
+                        color: t.$text-color;
+                        text-decoration: none;
+                        transition: 250ms;
+
+                        &:hover {
+                            color: t.$primary-color;
+                            background-color: t.$text-color;
+                        }
+                    }
+
+                }
+
+                @include m.phone {
+                    display: none;
+
+                }
+            }
+
+            .hamburguer {
+                .image-menu {
+                    height: 32px;
+                    width: 32px;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+
+                    @include m.phone {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        position: relative;
+        bottom: 50vh;
+
+        .abstract {
+            @include m.flexbox(space-between, center, column);
+            gap: 1rem;
+            max-width: 250px;
+            font-family: t.$title-font;
+            font-size: 2rem;
+            text-align: center;
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .btn-container {
+                @include m.flexbox(space-between, center, row);
+                min-width: 100%;
+
+                button {
+                    border: none;
+                    width: 45%;
+                    padding: 1rem 1rem;
+                    border-radius: 0.5rem;
+                    color: t.$text-color;
+                    background-color: t.$light-backdrop-color;
+                    cursor: pointer;
+                    font-family: t.$text-font;
+
+                    &:hover {
+                        color: t.$primary-color;
+                        background-color: t.$text-color;
+                        transition: 250ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes link {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

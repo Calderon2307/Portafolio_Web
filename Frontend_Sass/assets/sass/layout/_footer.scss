@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+@use '../base/theme' as t;
+@use '../base/mixins' as m;
+
+
+footer{
+    @include m.flexbox(center, center, row);
+    padding: 1rem 0;
+    font-family: t.$item-font;
+    font-size: 0.5rem;
+    background-color: t.$primary-color-dark;
+    color: t.$text-color;
+}
