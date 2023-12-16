@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Astronomy picture of the day calendar format archive.">
+        <title>Astronomy Picture of the Day | Random</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="icon" href="./assets/img/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header container">
+            <div class="header__wrapper">
+                <a href="#">
+                    <h1 class="header__title">
+                        <abbr title="Astronomy Picture of the Day">APOD</abbr>
+                    </h1>
+                </a>
+                <a
+                    href="https://www.nasa.gov/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    <img
+                        alt="NASA"
+                        src="./assets/img/nasa.webp"
+                        class="header__logo"
+                    />
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__list container">
+                    <li>
+                        <a href="index.html" class="navbar__link">Range</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link active">Random</a>
+                    </li>
+                    <li>
+                        <a href="date.html" class="navbar__link">Date</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Controls menu -->
+            <div class="controls controls--stats container">
+                <p>
+                    Count:
+                    <span id="count" class="control">0</span>
+                </p>
+                <form id="form" class="form">
+                    <button type="submit" id="btn-explore" class="control">
+                        Explore
+                    </button>
+                </form>
+            </div>
+
+            <section
+                class="image-section"
+                role="status"
+                aria-live="polite"
+                aria-relevant="additions"
+            >
+                <h2 class="sr-only">
+                    List of image of Astronomy picture of the day
+                </h2>
+                <!-- Card  List -->
+                <ul class="card-list container" id="container-cards">
+                    <!-- NOTE: Your generated image will appear here. -->
+
+                    <!-- Default element. -->
+                    <li class="first-card card card--not-found">
+                        <img
+                            class=""
+                            src="./assets/img/satellite.webp"
+                            alt=""
+                            width="100"
+                            height="100"
+                        />
+                        <p>Start exploring!</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Loading GIF div -->
+        <div id="loading-overlay" class="loading-overlay">
+            <img src="./assets/img/loading.gif" alt="Loading..." />
+        </div>
+
+        <script src="./assets/js/apiRequestRandom.js"></script>
+    </body>
+</html>

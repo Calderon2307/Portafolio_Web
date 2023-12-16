@@ -1,0 +1,365 @@
+/*
+  Josh's Custom CSS Reset
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select,
+fieldset {
+    font: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style: none;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+:is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: white solid 0.2rem;
+    outline-offset: 0.2rem;
+}
+
+/* END CSS reset */
+
+:root {
+    --color-text: #ffffff;
+    --color-link: #A6A6A6;
+    --color-link-hover: #cfcfcf;
+    --color-background: #0D0D0D;
+    --color-controls: #1e1e1e;
+    --color-controls-hover: #474747;
+    --border-radius: 0.5rem;
+    --border-controls: 1rem;
+    --base-transition: 0.2s ease-in-out;
+    --base-font: 'Prompt', sans-serif;
+    --base-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
+}
+
+/* START Global Styles */
+body {
+    font-family: var(--base-font);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: clamp(1rem, 0.1053rem + 2.1053vw, 2rem);
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 63.75rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    padding: 0;
+    margin: -0.0625rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+button,
+a,
+input {
+    transition: var(--base-transition);
+}
+
+input {
+    color-scheme: dark;
+}
+
+/* END Global Styles */
+
+/* START Header Styles */
+.header__title {
+    font-weight: 400;
+    font-size: clamp(1.5625rem, 1.3158rem + 1.3158vw, 2.5rem);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    object-fit: contain;
+    width: clamp(3.125rem, 2.7632rem + 1.9298vw, 4.5rem);
+}
+
+.navbar__list {
+    display: flex;
+    max-width: 25rem;
+    padding-block: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* END Header Styles */
+
+/* START Navbar Styles */
+.navbar__link {
+    color: var(--color-link);
+    position: relative;
+}
+
+.navbar__link:hover {
+    color: var(--color-link-hover);
+}
+
+.navbar__link.active {
+    color: var(--color-text);
+}
+
+.navbar__link::after,
+.navbar__link:hover::after,
+.navbar__link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 1rem;
+    bottom: -0.1rem;
+    left: 0;
+    transform-origin: center;
+    transition: transform var(--base-transition);
+}
+
+.navbar__link::after {
+    height: 0.13rem;
+    background-color: white;
+    transform: scaleX(0);
+}
+
+.navbar__link:hover::after,
+.navbar__link.active::after {
+    transform: scaleX(1);
+}
+
+/* END Navbar Styles */
+
+/* START Main Styles */
+.controls {
+    max-width: 26.875rem;
+    padding-block: 1rem;
+    font-weight: 600;
+}
+
+.controls--stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.control {
+    padding: 0.7rem 1.4rem;
+    background-color: var(--color-controls);
+    border-radius: var(--border-radius);
+}
+
+button.control:hover,
+input.control:hover {
+    background-color: var(--color-controls-hover);
+}
+
+/* END Main Styles */
+
+/* START Card Styles */
+.image-section {
+    padding-top: 2rem;
+}
+
+.card-list {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-controls);
+    box-shadow: var(--base-shadow), 0 1.5625rem 3.125rem 0 rgb(0 0 0 / 10%);
+    background: var(--color-controls-hover);
+}
+
+.card--not-found {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    box-shadow: none;
+    flex-direction: column;
+    background: none;
+}
+
+.card__content {
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(17, 16, 16, 0.85) 17.19%, rgba(30, 30, 30, 0.00) 100%);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card__img {
+    width: 100%;
+    aspect-ratio: 16/11;
+    object-fit: cover;
+    transition: transform var(--base-transition);
+    filter: blur(0.0325rem);
+}
+
+.card:hover .card__img {
+    transform: scale(1.1);
+    filter: blur(0);
+}
+
+.card__link {
+    outline: none !important;
+}
+
+.card__link::after,
+.card__link:focus::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--border-controls);
+}
+
+.card__link:focus::after {
+    outline: white solid 0.2rem;
+    outline-offset: -0.2rem;
+}
+
+/* Description of image */
+
+.description {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.description__image {
+    position: relative;
+}
+
+/* END Card Styles */
+
+/* START Form Styles */
+.form {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form__fieldset {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+/* END Form Styles */
+
+/* START Loading  Styles */
+
+.loading-overlay {
+    cursor: wait;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(13, 13, 13, 0.349);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-overlay img {
+    width: 5rem; 
+    height: 5rem; 
+}
+
+/* END Loading  Styles */
+
+@media (min-width: 48em) {
+  .controls--stats {
+    justify-content: space-between;
+  }
+
+  .navbar__list {
+    justify-content: space-between;
+  }
+}
+
+/* START Styles for scrollbars */
+::-webkit-scrollbar {
+    width: 1.3rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(10, 10, 10);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-controls);
+    border-radius: 1.25rem;
+    border: 0.3rem solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-controls-hover);
+}
+
+/* END Styles for scrollbars */
