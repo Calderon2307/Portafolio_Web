@@ -1,0 +1,56 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+@include m.tablet {
+    .section-inferior {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+#blog{
+    margin: 2rem 0;
+}
+
+.post-blog {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+
+    @include m.maxTablet {
+        grid-template-columns: 1fr;
+    }
+}
+
+.text-post {
+    a {
+        color: v.$dark;
+        margin-top: 2rem;
+        display: block;
+
+        @include m.tablet {
+            margin-top: 0;
+        }
+    }
+
+    h4 {
+
+        margin: 0;
+        line-height: 1.4;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: v.$pink;
+            margin-top: 1rem;
+        }
+    }
+
+    span {
+        color: v.$pink;
+    }
+}

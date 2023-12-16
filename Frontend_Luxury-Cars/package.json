@@ -1,0 +1,12 @@
+{
+  "name": "laboratory-03",
+  "version": "1.0.0",
+  "description": "A project demonstrating the use of Sass, Grid, and Flexbox",
+  "scripts": {
+    "start": "sass --watch src/scss:build/css",
+    "build": "sass src/scss:build/css"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

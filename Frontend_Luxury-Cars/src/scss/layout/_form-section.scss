@@ -1,0 +1,175 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+#contact {
+    @include m.flexbox(center, center);
+    @include m.dimensions(100%);
+    position: relative;
+    min-height: 100vh;
+    padding: 5rem;
+
+    @include m.maxTablet {
+				margin-top: 6rem;
+        padding: .5rem;
+    }
+
+    @include m.maxDesktop {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        height: auto;
+    }
+
+    .contact-form-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr ));
+        padding: 6rem;
+        @include m.dimensions(90%, 90%);
+        background: v.$pink;
+        box-shadow:  1px 9px 20px -5px rgba(0,0,0,.59);
+        border-radius: v.$border-radius;
+        
+        @include m.maxTablet {
+            display: block; 
+            width: 100%;
+            padding: 5rem 2rem;
+        }
+
+
+        .contact-form {
+            @include m.flexbox(center, center,column);
+            position: relative;
+            @include m.dimensions(100%);
+            
+            .text {
+                width: 80%;
+
+                @include m.maxTablet {
+                    width: 90%;
+                }
+                h2 {
+                    color: v.$light;
+                }
+                p {
+                    color: v.$light;
+                }
+            }    
+ 
+            form {
+                @include m.dimensions(80%);
+
+                @include m.maxTablet {
+                    @include m.dimensions(90%);
+                }
+
+                .input-box {
+                    @include m.flexbox(auto, auto,column);
+                    margin-bottom: 15px;
+ 
+ 
+                    label {
+                        color: v.$light;
+                        font-weight: 700;
+                    }
+ 
+                    textarea, input[type="text"], input[type="email"] {
+                        border: none;
+                        background: v.$softPink;
+                        padding: 10px;
+                        border-radius: v.$border-radius;
+                        color: v.$dark;
+
+                        &::placeholder {
+                            color: v.$whitePink;
+                        }
+                    }
+ 
+ 
+                    textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
+                        outline: 2px solid v.$whitePink;
+                    }
+                }
+ 
+                input[type="submit"] {
+                    background: v.$light;
+                    display: inline-block;
+                    text-align: center;
+                    @include m.dimensions(15rem);
+                    padding: 10px;
+                    border-radius: v.$border-radius;
+                    color: v.$pink;
+                    letter-spacing: 1px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow:  1px 9px 20px -5px rgba(0,0,0,.59);
+                    transition: 0.3s;
+ 
+                }
+ 
+                input[type="submit"]:hover{
+                    background: v.$softPink;
+                    color: v.$light;
+                }
+            }
+        }
+
+        .contact-info{
+            @include m.flexbox(center, center,column);
+ 
+            .contact-hero {
+                position: relative;
+                @include m.dimensions(80%, 75%);
+                
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include m.dimensions(100%, 100%);
+                    object-fit: cover;
+                    border-radius: v.$border-radius;
+                }
+            }
+
+            .text-box {
+                @include m.flexbox(center, start,column);
+                @include m.dimensions(80%);
+                padding: 5rem 0 3rem 0;
+             
+                .infoContact {
+                    @include m.flexbox(center, center,row);
+                   
+ 
+                    ion-icon {
+                        font-size: 2em;
+                        margin-right: 10px;
+                        color: v.$light;
+                    }
+                    p {
+                        color: v.$light;
+                        font-size: small;
+                    }
+                }
+            }
+
+            .rrss {
+                @include m.flexbox(auto, center,row);
+               
+                a {
+                    padding: 1.25rem;
+                    font-size: 2em;
+                    color: v.$light;
+                    transition: 0.3s;
+                    
+                    @include m.maxTablet{
+                        font-size: 1.5em;
+                    }
+                }
+
+                a:hover {
+                   color: v.$softPink;
+                }
+            }
+        }
+    }
+}

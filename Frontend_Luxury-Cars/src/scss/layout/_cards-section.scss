@@ -1,0 +1,86 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+#rent {
+    @include m.dimensions(100%);
+    min-height: 100vh;
+    @include m.flexbox(center, center, column);
+    padding: 8rem 0;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .cards {
+        @include m.flexbox(center, center);
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+        .flip-card {
+            flex-shrink: 0;
+            @include m.dimensions(320px, 504px);
+            padding: 2rem;
+            margin: 2rem;
+            perspective: 1000px;
+
+            .flip-card-inner {
+                position: relative;
+                @include m.dimensions(100%, 100%);
+                box-shadow: 0 4px 20px rgba(#000, 0.2);
+                @include m.card-transition(550ms, cubic-bezier(.1, .22, .8, 1.13));
+                border-radius: v.$border-radius;
+                transform-style: preserve-3d;
+            }
+
+            .flip-card-front,
+            .flip-card-back {
+                @include m.dimensions(100%, 504px);
+                position: absolute;
+                backface-visibility: hidden;
+                border-radius: v.$border-radius;
+            }
+
+            .flip-card-front {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                img {
+                    @include m.card-img(100%, 100%);
+                }
+
+                h3 {
+                    position: absolute;
+                    bottom: 0;
+                    @include m.dimensions(100%, 4rem);
+                    line-height: 45px;
+                    background-color: v.$h3-back;
+                    text-align: center;
+                    font-family: v.$main_font;
+                    color: v.$light;
+                }
+            }
+
+            .flip-card-back {
+                display: grid;
+                place-items: center;
+                background-color: v.$greyWhite;
+                transform: rotateY(180deg);
+
+                p {
+                    font-family: v.$main_font;
+                    font-size: 1.25rem;
+                    padding: 2rem;
+                }
+            }
+
+            .flip-card-inner {
+                &:hover {
+                    transform: rotateY(-180deg);
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@use '../base/variables' as v;
+
+@mixin phone {
+    @media (min-width: v.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin maxTablet {
+    @media (max-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin maxDesktop {
+    @media (max-width: v.$maxDesktop) {
+        @content;
+    }
+}
+
+@mixin grid($columns, $spacing) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $spacing;
+}
+
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin card-img($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: 15px;
+    object-fit: cover;
+    border-style: none;
+}
+
+@mixin card-transition($duration, $timing-function) {
+    transition: all $duration $timing-function;
+    transform-style: preserve-3d;
+}
+
+@mixin dimensions($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}

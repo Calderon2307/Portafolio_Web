@@ -1,0 +1,65 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.lineup {
+    background-color: v.$pink;
+    padding: 1.5rem 0;
+
+
+    h3,
+    p {
+        text-align: center;
+        color: v.$light;
+    }
+
+    .type-service {
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+}
+
+.services-container {
+    @include m.tablet {
+
+        @include m.grid(3, 5rem)
+    }
+
+    p {
+        color: v.$dark;
+    }
+
+    .service {
+        padding: 2rem;
+        margin-bottom: 5rem;
+        border-radius: 3rem;
+        text-align: center;
+        box-shadow:  1px 9px 20px -5px rgba(0,0,0,.59);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .service:hover {
+        transform: scale(1.05);
+    }
+}
+
+.bg-dark {
+    background-color: v.$darkGrey;
+
+    p {
+        color: v.$light;
+    }
+}
+
+.bg-light {
+    background-color: v.$lightGrey;
+    padding-right: 1rem;
+
+    p {
+        color: v.$dark;
+    }
+}
+
+.price-range {
+    font-weight: 700;
+}
+
