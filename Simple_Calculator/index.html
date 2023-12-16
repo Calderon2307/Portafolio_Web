@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/icons/icon.ico" />
+    <title>Calculator - Lab 03</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="calculator-screen">
+        <p class="calculator-screen-text"></p>
+      </section>
+
+      <section class="keypad">
+        <button value="7" class="keypad-button number">7</button>
+        <button value="8" class="keypad-button number">8</button>
+        <button value="9" class="keypad-button number">9</button>
+        <button class="keypad-button delete-button">DEL</button>
+        <button value="4" class="keypad-button number">4</button>
+        <button value="5" class="keypad-button number">5</button>
+        <button value="6" class="keypad-button number">6</button>
+        <button id="plus" class="keypad-button">+</button>
+        <button value="1" class="keypad-button number">1</button>
+        <button value="2" class="keypad-button number">2</button>
+        <button value="3" class="keypad-button number">3</button>
+        <button id="minus" class="keypad-button">-</button>
+        <button value="0" class="keypad-button number">0</button>
+        <button value="." class="keypad-button number">.</button>
+        <button id="divide" class="keypad-button">/</button>
+        <button id="times" class="keypad-button">*</button>
+        <button class="keypad-button reset-button">RESET</button>
+        <button class="keypad-button equals-button">=</button>
+      </section>
+    </div>
+
+    <div class="history">
+      <h2>History</h2>
+      <ul class="history-list"></ul>
+    </div>
+  </body>
+</html>

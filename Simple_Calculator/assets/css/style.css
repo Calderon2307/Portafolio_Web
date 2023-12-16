@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+ 
+:root {
+ 
+    --main-bg-color: hsl(222, 26%, 31%);
+    --keypad-bg-color: hsl(223, 31%, 20%);
+    --screen-bg-color: hsl(224, 36%, 15%);
+ 
+    --key-bg-color: hsl(225, 21%, 49%);
+    --key-shadow: hsl(224, 28%, 35%);
+ 
+    --red-bg-color: hsl(6, 63%, 50%);
+    --red-hover-bg-color: hsl(6, 93%, 67%);
+    --red-shadow: hsl(6, 70%, 34%);
+ 
+    --blue-bg-color: hsl(224, 21%, 50%);
+    --blue-hover-bg-color: hsl(224, 51%, 76%);
+    --blue-shadow: hsl(226, 27%, 36%);
+ 
+    --gray-bg-color: hsl(30, 25%, 89%);
+    --gray-shadow: hsl(28, 16%, 65%);
+ 
+    --text-color: hsl(221, 14%, 31%);
+    --white-color: hsl(0, 0%, 100%);
+ 
+}
+ 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+ 
+    box-sizing: border-box;
+ 
+    font-family: 'League Spartan', sans-serif;
+}
+ 
+body {
+    background-color: var(--main-bg-color);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+ 
+.container {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.calculator-screen {
+    width: 100%;
+    height: 100px;
+    background-color: var(--screen-bg-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+ 
+.calculator-screen-text {
+    margin: 0;
+    overflow-x: auto;
+}
+ 
+.keypad {
+    width: 100%;
+    height: 500px;
+    background-color: var(--keypad-bg-color);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+}
+ 
+.keypad-button {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    color: var(--text-color);
+    background-color: var(--gray-bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0.35rem var(--gray-shadow);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.keypad-button:hover {
+    cursor: pointer;
+    background-color: var(--white-color);
+}
+
+.keypad-button:active{
+    box-shadow: 0 0.1rem var(--gray-shadow);
+}
+ 
+.keypad-button.equals-button {
+    grid-column: 3/5;
+    background-color: var(--red-bg-color);
+    box-shadow: 0 0.35rem var(--red-shadow);
+    color: var(--white-color);
+}
+ 
+.keypad-button.equals-button:hover {
+    background-color: var(--red-hover-bg-color);
+}
+
+.keypad-button.equals-button:active{
+    box-shadow: 0 0.1rem var(--red-shadow);
+}
+ 
+.keypad-button.reset-button {
+    grid-column: 1/3;
+}
+ 
+.keypad-button.reset-button, .keypad-button.delete-button {
+    background-color: var(--blue-bg-color);
+    box-shadow: 0 0.35rem var(--blue-shadow);
+    color: var(--white-color);
+}
+ 
+.keypad-button.reset-button:hover,
+.keypad-button.delete-button:hover {
+    background-color: var(--blue-hover-bg-color);
+}
+
+.keypad-button.reset-button:active,
+.keypad-button.delete-button:active{
+    box-shadow: 0 0.1rem var(--blue-shadow);
+}
+ 
+.history {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    overflow-y: auto;
+    background-color: var(--keypad-bg-color);
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+}
+ 
+.history > h2 {
+    margin: 2rem;
+}
+ 
+.history-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.history-list li {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--blue-bg-color);
+}
+
+.history::-webkit-scrollbar {
+    width: 12px;
+}
+
+.history::-webkit-scrollbar-track {
+    background: none;
+}
+
+.history::-webkit-scrollbar-thumb {
+    background-color: var(--blue-bg-color);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        height: 100%;
+        padding: 2rem 0.5rem;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .history {
+        max-height: fit-content;
+    }
+}
