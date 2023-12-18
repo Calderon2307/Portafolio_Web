@@ -1,0 +1,49 @@
+:root {
+  --color-text: #ffffff;
+  --color-link: #A6A6A6;
+  --color-link-hover: #cfcfcf;
+  --color-background: #0D0D0D;
+  --color-controls: #1e1e1e;
+  --color-controls-hover: #474747;
+  --border-radius: 0.5rem;
+  --border-controls: 1rem;
+  --base-transition: 0.2s ease-in-out;
+  --base-font: 'Prompt', sans-serif;
+  --base-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
+}
+
+body {
+  font-family: var(--base-font);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: clamp(1rem, 0.1053rem + 2.1053vw, 2rem);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 63.75rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+button,
+a,
+input {
+  transition: var(--base-transition);
+}
+
+input {
+  color-scheme: dark;
+}
