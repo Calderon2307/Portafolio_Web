@@ -1,0 +1,27 @@
+.info_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.categoria{
+    padding: 0.5rem;
+    border-radius: 1rem 0rem 1rem 0rem;
+    color: white;
+    background-color: royalblue;
+}
+
+.dificultad{
+    padding: 0.5rem;
+    border-radius: 0rem 1rem 0rem 1rem;
+}
+
+.easy{
+    background-color: rgb(46, 219, 46);
+}
+.medium{
+    background-color: rgb(212, 182, 10);
+}
+.hard{
+    background-color: rgb(226, 32, 32);
+}

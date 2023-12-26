@@ -29,7 +29,7 @@ const equiposFutbol = [
         "pais": "España",
         "entrenador": "Xavi Hernandez",
         "estadio": "Camp Nou",
-        "imagen": "https://emojiisland.com/cdn/shop/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_grande.png?v=1571606036"
+        "imagen": "https://static.cdnlogo.com/logos/f/53/fc-barcelona-thumb.png"
     },
     {
         "id": "mN7oP9qS1tV3w",

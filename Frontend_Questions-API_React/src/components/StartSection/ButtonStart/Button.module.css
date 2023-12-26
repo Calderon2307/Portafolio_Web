@@ -1,0 +1,19 @@
+.btn{
+    width: 200px;
+    padding: 1rem 0rem;
+    color: white;
+    background-color: lightcoral;
+    border: 1px solid black;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(169, 95, 95);
+}
+
+.btn:active{
+    background-color: #888;
+}

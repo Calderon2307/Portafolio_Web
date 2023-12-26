@@ -1,0 +1,22 @@
+.questionSection {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.icon:hover {
+  scale: 1.3;
+}
+
+.icon:active {
+  scale: 1;
+}

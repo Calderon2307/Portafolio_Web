@@ -1,0 +1,42 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.questionNumber {
+  padding: 1rem;
+  border: 2px solid royalblue;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.text {
+  font-weight: bold;
+  transition: all 250ms;
+}
+
+.questionNumber:hover {
+  scale: 1.2;
+}
+
+.selected {
+  background-color: royalblue;
+  border: 1px solid black;
+  color: white;
+}

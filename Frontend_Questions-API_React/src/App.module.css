@@ -1,0 +1,32 @@
+.score {
+  position: fixed;
+  top: 100px;
+  right: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: bisque;
+  text-align: center;
+}
+
+.loading > img {
+  width: 100px;
+}
+
+.loadingContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.totalQuestions {
+  position: fixed;
+  top: 100px;
+  left: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: bisque;
+  text-align: center;
+}

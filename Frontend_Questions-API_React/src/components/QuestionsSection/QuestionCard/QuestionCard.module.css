@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  width: 50%;
+  padding-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: wheat;
+  font-weight: bold;
+  position: relative;
+}
+
+.correct {
+  color: rgb(14, 149, 14);
+}
+
+.incorrect {
+  color: rgb(226, 32, 32);
+}
+
+.calificacion {
+  text-align: center;
+}
+
+.correctAnswer {
+  margin: 0 auto;
+}
+
+.answered {
+  pointer-events: none;
+}
+
+.questionNumber {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  border-radius: 0rem 1rem 0rem 1rem;
+  border-radius: 1rem 0rem 1rem 0rem;
+  background-color: royalblue;
+  cursor: default;
+}
+
+.number {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: white;
+}

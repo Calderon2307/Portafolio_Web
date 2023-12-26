@@ -1,0 +1,6 @@
+.btnContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1.5rem 0rem;
+}
