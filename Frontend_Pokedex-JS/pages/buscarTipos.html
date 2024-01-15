@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/601px-Pokebola-pokeball-png-0.png"
+        type="image/x-icon">
+    <title>Buscador Pokemon | Tipos</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            Busca Pokemon
+        </h1>
+        <button class="btn limpiarPantalla">
+            LIMPIAR PANTALLA
+        </button>
+    </header>
+
+    <main class="types-main">
+        <section class="poke-input padding">
+            <div class="button-container">
+                <a href="/pages/index.html">
+                    <button class="button" id="search-one">
+                        Buscar un Pokemon
+                    </button>
+                </a>
+
+                <a href="/pages/buscarGrupo.html">
+                    <button class="button" id="search-group">
+                        Buscar grupo de Pokemons
+                    </button>
+                </a>
+
+                <a href="/pages/buscarGeneraciones.html">
+                    <button class="button" id="generations">
+                        Ver generaciones
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="button active" id="generations">
+                        Tipos
+                    </button>
+                </a>
+            </div>
+            <section class="form generaciones">
+                <h3 class="label-generaciones">Escoge un tipo:</h3>
+                <div class="btn-container">
+                    <button type="button" class="button btn-t" data-idType="9" title="tipo Acero">Acero</button>
+                    <button type="button" class="button btn-t" data-idType="11" title="tipo Agua">Agua</button>
+                    <button type="button" class="button btn-t" data-idType="7" title="tipo Bicho">Bicho</button>
+                    <button type="button" class="button btn-t" data-idType="16" title="tipo Dragon">Dragon</button>
+                    <button type="button" class="button btn-t" data-idType="13"
+                        title="tipo Electrico">Electrico</button>
+                    <button type="button" class="button btn-t" data-idType="8" title="tipo Fantasma">Fantasma</button>
+                    <button type="button" class="button btn-t" data-idType="10" title="tipo Fuego">Fuego</button>
+                    <button type="button" class="button btn-t" data-idType="18" title="tipo Hada">Hada</button>
+                    <button type="button" class="button btn-t" data-idType="15" title="tipo Hielo">Hielo</button>
+                    <button type="button" class="button btn-t" data-idType="2" title="tipo Lucha">Lucha</button>
+                    <button type="button" class="button btn-t" data-idType="1" title="tipo Normal">Normal</button>
+                    <button type="button" class="button btn-t" data-idType="12" title="tipo Planta">Planta</button>
+                    <button type="button" class="button btn-t" data-idType="14" title="tipo Psiquico">Psiquico</button>
+                    <button type="button" class="button btn-t" data-idType="6" title="tipo Roca">Roca</button>
+                    <button type="button" class="button btn-t" data-idType="17"
+                        title="tipo Siniestro">Siniestro</button>
+                    <button type="button" class="button btn-t" data-idType="5" title="tipo Tierra">Tierra</button>
+                    <button type="button" class="button btn-t" data-idType="4" title="tipo Veneno">Veneno</button>
+                    <button type="button" class="button btn-t" data-idType="3" title="tipo Volador">Volador</button>
+                </div>
+            </section>
+        </section>
+        <article class="type-info">
+            <!-- Damage to & from other Types Info -->
+        </article>
+        <section class="types">
+            <!-- Type Name -->
+        </section>
+        <section class="poke-show">
+            <!-- Pokemons of current type -->
+        </section>
+        <figure class="loading-container">
+            <img src="/assets/loading3.gif" alt="loading..." class="loading">
+        </figure>
+    </main>
+    <div class="margen"></div>
+    <footer>
+        <p>
+            Creado por: Federico Calderon
+        </p>
+    </footer>
+    <script src="/services/buscarTipos.js"></script>
+</body>
+
+</html>

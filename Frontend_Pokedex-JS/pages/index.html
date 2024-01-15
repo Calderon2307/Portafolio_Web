@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/601px-Pokebola-pokeball-png-0.png"
+        type="image/x-icon">
+    <title>Buscador Pokemon</title>
+</head>
+
+<body class="body">
+    <header>
+        <h1 class="title">
+            Busca Pokemon
+        </h1>
+        <button class="btn limpiarPantalla">
+            LIMPIAR PANTALLA
+        </button>
+    </header>
+
+    <main>
+        <section class="poke-input padding">
+            <div class="button-container">
+                <a href="#">
+                    <button class="button active" id="search-one">
+                        Buscar un Pokemon
+                    </button>
+                </a>
+
+                <a href="/pages/buscarGrupo.html">
+                    <button class="button" id="search-group">
+                        Buscar grupo de Pokemons
+                    </button>
+                </a>
+
+                <a href="/pages/buscarGeneraciones.html">
+                    <button class="button" id="generations">
+                        Ver generaciones
+                    </button>
+                </a>
+                <a href="/pages/buscarTipos.html">
+                    <button class="button" id="generations">
+                        Tipos
+                    </button>
+                </a>
+            </div>
+            <form class="form">
+                <label for="pokeName">Busca un Pokemon:</label>
+                <input type="text" id="pokeName" name="pokemonName" placeholder="Pikachu...">
+                <input type="submit" value="Buscar Pokemon" class="button">
+            </form>
+        </section>
+        <section class="poke-show">
+            <!-- Pokemons -->
+        </section>
+        <figure class="loading-container">
+            <img src="/assets/loading3.gif" alt="loading..." class="loading">
+        </figure>
+    </main>
+    <div class="margen"></div>
+    <footer>
+        <p>
+            Creado por: Federico Calderon
+        </p>
+    </footer>
+    <script src="/services/buscarUnPokemon.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,593 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  background-color: royalblue;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.poke-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.padding {
+  padding-top: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+label {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  min-width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:not(.button) {
+  padding: 0.5em;
+}
+
+.button {
+  padding: 0.5rem 0.5rem;
+  min-width: 5rem;
+  align-self: flex-end;
+  margin-bottom: 0;
+  background-color: greenyellow;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+.button:active {
+  background-color: #ccc;
+}
+
+.button:hover {
+  background-color: rgb(113, 151, 56);
+}
+
+footer {
+  background-color: royalblue;
+  width: 100%;
+  padding: 0.5rem;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.poke-show {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.poke-team {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.card {
+  min-width: 550px;
+  height: 300px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 1rem;
+  transition: all ease-in 250ms;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  transform: rotateY(180deg);
+}
+
+.card-inner:hover {
+  transform: rotateY(-180deg);
+}
+
+article.card .pokeImg .sprite {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article.card .pokeImg .small {
+  width: 80px;
+  height: 80px;
+}
+
+article.card .pokeImg .sprite img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+article.card .pokeImg .shiny img {
+  filter: drop-shadow(0px 0px 5px gold);
+}
+
+article.card .pokeImg img.shiny {
+  filter: drop-shadow(0px 0px 5px gold);
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.shiny::after {
+  content: " ";
+  position: absolute;
+  right: 15%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: gold;
+
+  align-self: flex-start;
+}
+
+.pokeImg {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 0.5rem;
+}
+
+.pokeInfo {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.nombrePoke {
+  font-weight: bold;
+}
+
+.types {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.tipo {
+  padding: 0.3em 0em;
+  min-width: 6rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.padding_x {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.stats-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+.stat {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.total-stats {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bar-container {
+  width: 255px;
+  height: 1.2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 1rem;
+  border-right: 1px solid black;
+  background-color: #fff;
+}
+
+.stat-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black,
+    0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+  color: white;
+  /* text-align: center; */
+}
+
+.margen {
+  width: 100%;
+  height: 0.5rem;
+  margin: 3rem auto;
+}
+
+.active {
+  background-color: rgb(255, 255, 56);
+}
+
+section.form.generaciones {
+  width: 45%;
+}
+
+label.label-generaciones {
+  align-self: center;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.btn {
+  width: 100px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  color: white;
+  background-color: royalblue;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn-g,
+.btn-t {
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: rgb(83, 126, 255);
+}
+
+.limpiarPantalla {
+  background-color: firebrick;
+  justify-self: flex-end;
+}
+
+.limpiarPantalla:hover {
+  background-color: rgb(218, 66, 66);
+}
+
+.btn:active {
+  background-color: #716f6f;
+}
+
+.loading-container {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.region-info {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.region-container {
+  width: 60%;
+  text-align: center;
+  padding: 10rem 0rem;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+  box-shadow: 5px 5px 7px black;
+}
+
+.region-name {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black,
+    0px 0px 5px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  visibility: hidden;
+  transition: all 250ms ease-out;
+}
+
+.region-container:hover .region-name {
+  visibility: visible;
+}
+
+.type-info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  background-color: antiquewhite;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.damage-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+
+.damage-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 30%;
+  gap: 1rem;
+}
+
+.damage-title {
+  text-transform: uppercase;
+}
+
+hr.line {
+  border: 1px solid royalblue;
+  height: 50%;
+  align-self: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*TIPOS: */
+
+.normal {
+  background-color: #6d6c6c;
+}
+.fighting {
+  background-color: #ac1d1d;
+}
+.flying {
+  background-color: #9fd0ec;
+}
+.poison {
+  background-color: #6a1b9a;
+}
+.ground {
+  background-color: #775130dc;
+}
+.rock {
+  background-color: #d37a2cdc;
+}
+.bug {
+  background-color: #385f29;
+}
+.ghost {
+  background-color: #544494;
+}
+.steel {
+  background-color: #97a2a7;
+}
+.fire {
+  background-color: #e75c31;
+}
+.water {
+  background-color: #3b49e6;
+}
+.grass {
+  background-color: #32b93b;
+}
+.electric {
+  background-color: #ecb835;
+}
+.psychic {
+  background-color: #ff3a89;
+}
+.ice {
+  background-color: #54c0f1;
+}
+.dragon {
+  background-color: #234e8f;
+}
+.dark {
+  background-color: #000000;
+}
+.fairy {
+  background-color: #e57dff;
+}
+
+/* STATS */
+
+.low {
+  background-color: crimson;
+}
+
+.medium {
+  background-color: orange;
+}
+
+.high {
+  background-color: greenyellow;
+}
+
+/* REGIONS */
+
+.kanto {
+  background-image: url(/assets/Kanto.jpg);
+  background-size: cover;
+}
+
+.johto {
+  background-image: url(/assets/Johto.jpg);
+  background-size: contain;
+  background-position: top;
+}
+
+.hoenn {
+  background-image: url(/assets/Hoenn.jpeg);
+  background-position: top;
+}
+
+.sinnoh {
+  background-image: url(/assets/Sinnoh.jpeg);
+  background-size: auto;
+  background-position: bottom;
+}
+
+.unova {
+  background-image: url(/assets/Unova.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.kalos {
+  background-image: url(/assets/Kalos.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.alola {
+  background-image: url(/assets/Alola.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.galar {
+  background-image: url(/assets/Galar.jpg);
+  background-size: cover;
+}
+
+.paldea {
+  background-image: url(/assets/Paldea.jpg);
+  background-size: contain;
+  background-position: top;
+}

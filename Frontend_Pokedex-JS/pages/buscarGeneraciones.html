@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/601px-Pokebola-pokeball-png-0.png"
+        type="image/x-icon">
+    <title>Buscador Pokemon | Generaciones</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            Busca Pokemon
+        </h1>
+        <button class="btn limpiarPantalla">
+            LIMPIAR PANTALLA
+        </button>
+    </header>
+
+    <main class="generation-main">
+        <section class="poke-input padding">
+            <div class="button-container">
+                <a href="/pages/index.html">
+                    <button class="button" id="search-one">
+                        Buscar un Pokemon
+                    </button>
+                </a>
+
+                <a href="/pages/buscarGrupo.html">
+                    <button class="button" id="search-group">
+                        Buscar grupo de Pokemons
+                    </button>
+                </a>
+
+                <a href="#">
+                    <button class="button active" id="generations">
+                        Ver generaciones
+                    </button>
+                </a>
+                <a href="/pages/buscarTipos.html">
+                    <button class="button" id="generations">
+                        Tipos
+                    </button>
+                </a>
+            </div>
+            <section class="form generaciones">
+                <h3 class="label-generaciones">Escoge una generacion:</h3>
+                <div class="btn-container">
+                    <button type="button" class="button btn-g gen-1" title="Generacion 1">Kanto</button>
+                    <button type="button" class="button btn-g gen-2" title="Generacion 2">Johto</button>
+                    <button type="button" class="button btn-g gen-3" title="Generacion 3">Hoenn</button>
+                    <button type="button" class="button btn-g gen-4" title="Generacion 4">Sinnoh</button>
+                    <button type="button" class="button btn-g gen-5" title="Generacion 5">Unova</button>
+                    <button type="button" class="button btn-g gen-6" title="Generacion 6">Kalos</button>
+                    <button type="button" class="button btn-g gen-7" title="Generacion 7">Alola</button>
+                    <button type="button" class="button btn-g gen-8" title="Generacion 8">Galar</button>
+                    <button type="button" class="button btn-g gen-9" title="Generacion 9">Paldea</button>
+                </div>
+            </section>
+        </section>
+        <section class="region-info"></section>
+        <section class="poke-show">
+            <!-- <div class="region-container">
+                <h3 class="region-name"></h3>
+            </div> -->
+        </section>
+        <figure class="loading-container">
+            <img src="/assets/loading3.gif" alt="loading..." class="loading">
+        </figure>
+    </main>
+    <div class="margen"></div>
+    <footer>
+        <p>
+            Creado por: Federico Calderon
+        </p>
+    </footer>
+    <script src="/services/buscarGeneraciones.js"></script>
+</body>
+
+</html>
