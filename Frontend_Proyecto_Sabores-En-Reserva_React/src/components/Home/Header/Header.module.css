@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  background-color: #eb7b83;
+  z-index: 100;
+}
+
+.iconContainer {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menuMovil {
+  display: none;
+  position: absolute;
+  z-index: -10;
+}
+
+@media (max-width: 873px) {
+  .iconContainer {
+    display: block;
+    z-index: 10;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+
+  .menuMovil {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -500px;
+    left: 0;
+    z-index: -10;
+    transition: all 750ms ease-out;
+  }
+
+  .menuOpen {
+    top: 57px;
+    transition: all 750ms ease-out;
+    z-index: -10;
+  }
+}

@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - (124px + 69px));
+}
+
+@media (max-width: 1172px) {
+  .main {
+    height: calc(100vh - (113px + 69px));
+  }
+}

@@ -1,0 +1,6 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  width: 100%;
+}

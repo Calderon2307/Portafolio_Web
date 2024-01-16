@@ -1,0 +1,140 @@
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #eb7b83;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.recipeImg {
+  background-color: #ccc;
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipeInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nameContainer {
+  width: 50%;
+}
+
+.recipeName {
+  font-family: sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-lines: 1;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.recipeDifficullty {
+  background-color: #2a9d8f;
+  padding: 0 0.4rem;
+  border-radius: 1rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+.recipeTime {
+  background-color: #6688e2;
+  padding: 0 0.4rem;
+  border-radius: 1rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+.recipeDescription {
+  text-align: left;
+}
+
+.text {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-lines: 3;
+  overflow: hidden;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.saveStart {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.save {
+  cursor: pointer;
+}
+
+.start {
+  cursor: pointer;
+}
+
+.hats {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 100%;
+}
+
+.number {
+  align-self: flex-end;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.easy {
+  background-color: #2a9d8f;
+}
+
+.medium {
+  background-color: #918d27;
+}
+
+.hard {
+  background-color: #a6000a;
+}

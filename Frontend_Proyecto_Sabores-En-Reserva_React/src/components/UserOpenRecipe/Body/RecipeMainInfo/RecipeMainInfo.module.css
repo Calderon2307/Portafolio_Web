@@ -1,0 +1,7 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0;
+}

@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 1rem 0rem;
+  background-color: #eb7b83;
+}
+
+@media (max-width: 717px) {
+  .footer {
+    flex-flow: column wrap;
+    gap: 2rem;
+    padding: 2rem 0rem;
+  }
+}

@@ -1,0 +1,12 @@
+.formContainer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  width: 70%;
+}
+
+@media (max-width: 912px) {
+  .formContainer {
+    width: 90%;
+  }
+}

@@ -1,0 +1,13 @@
+.title {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(235, 123, 131, 0.5);
+  font-family: sans-serif;
+}
+
+@media (max-width: 873px) {
+  .title {
+    text-align: center;
+  }
+}

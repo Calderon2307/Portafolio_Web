@@ -1,0 +1,157 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: calc(100vh - (124px + 69px));
+}
+
+.title {
+  width: fit-content;
+  font-family: sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(145, 190, 185, 0.5);
+}
+
+.imgContainer {
+  align-self: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.label {
+  width: 100%;
+  padding-left: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.labelImg {
+  padding-left: 0rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.imgUser {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #ccc;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  font-family: sans-serif;
+}
+
+.inputUserImg {
+  display: none;
+}
+
+.infoContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  position: relative;
+}
+
+/*
+.inputUserEmail {
+}
+
+.inputUserPassword {
+}
+
+.inputUserRepeatPassword {
+}*/
+
+.btnContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #2a9d8f;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.button:hover {
+  background-color: #2fbaaa;
+}
+
+.button:active {
+  background-color: #20645d;
+}
+
+.error {
+  position: absolute;
+  align-self: center;
+  color: crimson;
+}
+
+.errorImg {
+  align-self: center;
+  color: crimson;
+}
+
+@media (max-width: 1171px) {
+  .main {
+    height: calc(100vh - (124px + 58px));
+  }
+}
+
+@media (max-height: 800px) {
+  .main {
+    height: auto;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .form {
+    width: 90%;
+  }
+  .button {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(144, 190, 185, 0.5);
+}
+
+.title {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.wrapperLinks {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.link {
+  font-size: 2.5rem;
+}
+
+.facebook {
+  color: blue;
+}

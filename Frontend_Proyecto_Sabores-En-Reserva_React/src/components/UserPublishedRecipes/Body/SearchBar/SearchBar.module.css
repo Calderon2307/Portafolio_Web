@@ -1,0 +1,168 @@
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.searchBar {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: rgba(144, 190, 185, 0.5);
+}
+
+.searchContainer {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.label {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.input {
+  width: 500px;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  outline: 2px solid royalblue;
+}
+
+.submitBtn {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+  width: 2em;
+  height: 100%;
+  border: 1px solid black;
+  border-left: none;
+  border-radius: 0rem 1rem 1rem 0rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: white;
+  color: #f5afaf;
+  line-height: 50%;
+  text-align: center;
+}
+
+.submitBtn:active {
+  background-color: #e4dcdc;
+}
+
+.filterBtn {
+  width: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5em;
+  background-color: transparent;
+  text-align: center;
+  line-height: 50%;
+  cursor: pointer;
+}
+
+.filterBtn:active {
+  background-color: #e4dcdc;
+}
+
+.btnsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem;
+  width: 5rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.editBtn {
+  background-color: #2a9d8f;
+}
+
+.editBtn:hover {
+  background-color: #2fbaaa;
+}
+
+.editBtn:active {
+  background-color: #20645d;
+}
+
+.deleteBtn {
+  background-color: #d96a6e;
+}
+
+.deleteBtn:hover {
+  background-color: #ff7e82;
+}
+
+.deleteBtn:active {
+  background-color: #c05f62;
+}
+
+@media (max-width: 1130px) {
+  .input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 873px) {
+  .searchBar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .filterBtn {
+    align-self: flex-end;
+    line-height: 100%;
+  }
+  .label {
+    padding-left: 3rem;
+  }
+  .btnsContainer {
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    padding: 1rem;
+    width: 40%;
+  }
+}
+
+@media (max-width: 873px) {
+  .searchBar {
+    padding: 0.5rem 1rem;
+  }
+  .input {
+    width: 250px;
+  }
+}

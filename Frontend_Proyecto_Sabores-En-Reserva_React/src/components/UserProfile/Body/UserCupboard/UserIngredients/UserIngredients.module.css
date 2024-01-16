@@ -1,0 +1,26 @@
+.cardsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 2000px) {
+  .cardsContainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1715px) {
+  .cardsContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .cardsContainer {
+    width: 95%;
+  }
+}

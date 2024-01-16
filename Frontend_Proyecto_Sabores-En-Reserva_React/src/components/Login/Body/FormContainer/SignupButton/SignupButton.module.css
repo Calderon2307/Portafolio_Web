@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.p {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(245, 175, 175, 0.6);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.link {
+  color: inherit;
+}

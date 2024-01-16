@@ -1,0 +1,17 @@
+.title {
+  color: white;
+  font-family: "Roboto Slab", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  z-index: 100;
+}
+
+@media (max-width: 1171px) {
+  .title {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+}

@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: calc(100vh - (126px + 69px));
+}
+
+@media (max-width: 1171px) {
+  .main {
+    height: calc(100vh - (124px + 58px));
+  }
+}
+
+@media (max-height: 800px) {
+  .main {
+    height: auto;
+    padding: 2rem;
+  }
+}

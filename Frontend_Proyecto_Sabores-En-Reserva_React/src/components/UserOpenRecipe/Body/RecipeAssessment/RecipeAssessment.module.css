@@ -1,0 +1,40 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(235, 123, 131, 0.5);
+  font-family: sans-serif;
+}
+
+.hatsContainer {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.iconQualified {
+  color: rgb(235, 123, 131);
+}
+
+.qualified {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 873px) {
+  .section {
+    align-items: center;
+  }
+}

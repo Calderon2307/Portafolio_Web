@@ -1,0 +1,87 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #eb7b83;
+  text-shadow: 0px 0px 1px black;
+}
+
+.errorContanier {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.numberContainer {
+  height: 200px;
+  text-align: center;
+}
+.four {
+  font-size: 250px;
+  font-weight: bold;
+  font-family: sans-serif;
+  line-height: 100%;
+}
+
+.imgContainer {
+  display: inline-flex;
+  border-radius: 50%;
+}
+.gif {
+  width: 350px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.message {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #eb7b83;
+  text-shadow: 0px 0px 1px black;
+}
+
+@media (max-width: 1023px) {
+  .title {
+    font-size: 2rem;
+  }
+  .numberContainer {
+    height: 100px;
+  }
+  .four {
+    font-size: 150px;
+  }
+  .gif {
+    width: 250px;
+    height: 150px;
+  }
+  .message {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 623px) {
+  .title {
+    font-size: 1rem;
+  }
+  .numberContainer {
+    height: 50px;
+  }
+  .four {
+    font-size: 100px;
+  }
+  .gif {
+    width: 150px;
+    height: 100px;
+  }
+  .message {
+    font-size: 0.8rem;
+  }
+}

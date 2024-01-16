@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.title {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-family: sans-serif;
+  background-color: rgba(235, 123, 131, 0.5);
+}
+
+.description {
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: sans-serif;
+  background-color: rgba(42, 157, 143, 0.5);
+}
+
+@media (max-width: 873px) {
+  .title{
+    align-self: center;
+  }
+}

@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 2000px) {
+  .section {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1715px) {
+  .section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .section {
+    width: 95%;
+  }
+}

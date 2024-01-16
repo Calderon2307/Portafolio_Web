@@ -1,0 +1,6 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  gap: 3rem;
+}

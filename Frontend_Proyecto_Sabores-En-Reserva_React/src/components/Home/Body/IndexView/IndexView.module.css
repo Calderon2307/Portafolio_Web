@@ -1,0 +1,30 @@
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  height: calc(100vh - 84px);
+}
+
+@media (max-width: 1130px) {
+  .section {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 2rem 0rem 0rem 0rem;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 873px) {
+  .section {
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0rem 0rem 0rem 0rem;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 560px) {
+}

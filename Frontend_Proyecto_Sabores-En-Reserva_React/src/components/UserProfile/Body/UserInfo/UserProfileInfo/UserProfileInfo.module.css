@@ -1,0 +1,44 @@
+.userInfoContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+}
+
+.userName {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.statContainier {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statNumber {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.statName {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 873px) {
+  .userInfoContainer {
+    gap: 1.5rem;
+  }
+  .statContainier {
+    font-size: 0.8rem;
+  }
+}

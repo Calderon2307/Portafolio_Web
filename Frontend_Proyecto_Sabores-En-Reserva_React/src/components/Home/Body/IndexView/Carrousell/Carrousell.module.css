@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: url("/Frontend/src/assets/Comida7.jpeg");
+  background-color: #ccc;
+  box-shadow:
+    8px 8px 5px #8a8989,
+    8px 8px 5px #8a8989,
+    8px 8px 5px #8a8989;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.textContainer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  width: 40%;
+  height: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(144, 190, 185, 0.6);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+.p {
+  text-align: left;
+}
+
+@media (max-width: 1130px) {
+  .container {
+    height: 70%;
+    width: 90%;
+  }
+  .textContainer {
+    width: 50%;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 796px) {
+  .container {
+    width: 90%;
+  }
+  .textContainer {
+    width: 50%;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: 90%;
+  }
+
+  .textContainer {
+    width: 60%;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
+}

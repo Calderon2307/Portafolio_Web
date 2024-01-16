@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.value {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: rgba(42, 157, 143, 0.6);
+  font-weight: bold;
+}

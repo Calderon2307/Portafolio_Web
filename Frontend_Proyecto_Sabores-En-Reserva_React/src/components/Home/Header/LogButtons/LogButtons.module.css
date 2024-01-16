@@ -1,0 +1,85 @@
+.btnContainer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.button {
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: all 250ms;
+  text-decoration: none;
+}
+
+.btnLogin {
+  background-color: #2a9d8f;
+}
+
+.btnLogin:hover {
+  background-color: #2fbaaa;
+}
+
+.btnLogin:active {
+  background-color: #20645d;
+}
+
+.btnSignUp {
+  background-color: #d96a6e;
+}
+
+.btnSignUp:hover {
+  background-color: #f38387;
+}
+
+.btnSignUp:active {
+  background-color: #b06063;
+}
+
+.icon {
+  display: none;
+}
+
+@media (max-width: 1171px) {
+  .button {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 873px) {
+  .btnContainer {
+    flex-direction: column;
+    gap: 0rem;
+    width: 100%;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    border: none;
+    border-radius: 0rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    color: black;
+    background-color: #eb7b83;
+  }
+  .btnSignUp {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .btnLogin {
+    border-top: 1px solid black;
+  }
+  .icon {
+    display: inline;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+}

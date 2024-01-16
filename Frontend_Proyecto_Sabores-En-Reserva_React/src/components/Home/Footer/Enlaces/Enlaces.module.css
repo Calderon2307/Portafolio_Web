@@ -1,0 +1,42 @@
+.navContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.navTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+  width: 100%;
+}
+
+.navList {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+
+.listItem {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 250ms;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
