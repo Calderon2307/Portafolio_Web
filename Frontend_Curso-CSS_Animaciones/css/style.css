@@ -538,79 +538,77 @@ a {
 
 /*MODIFICANDO EL HOVER DE LOS ELEMENTOS*/
 
-@media (hover: hover) {
-  .button:hover {
-    background-color: rgb(216, 181, 136);
-    color: rgb(26, 25, 25);
-  }
+.button:hover {
+  background-color: rgb(216, 181, 136);
+  color: rgb(26, 25, 25);
+}
 
-  .menu_link:hover {
-    color: royalblue;
-    transform: scale(1.2, 1.2);
-  }
+.menu_link:hover {
+  color: royalblue;
+  transform: scale(1.2, 1.2);
+}
 
-  .button:hover > .tuerca {
-    animation-name: desdeAbajo;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-  }
+.button:hover > .tuerca {
+  animation-name: desdeAbajo;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
 
-  .button:hover > .blog {
-    animation-name: desdeDerecha;
-    animation-duration: 300ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-  }
+.button:hover > .blog {
+  animation-name: desdeDerecha;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
 
-  .card:hover {
-    background-position: top;
-  }
+.card:hover {
+  background-position: top;
+}
 
-  .card:hover > .card_icon {
-    transform: scale(1.3, 1.3);
-    color: royalblue;
-    animation-name: iconoDesdeArriba;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-  }
+.card:hover > .card_icon {
+  transform: scale(1.3, 1.3);
+  color: royalblue;
+  animation-name: iconoDesdeArriba;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 
-  .card:hover > .card_title {
-    color: white;
-    animation-name: desdeArriba;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-  }
+.card:hover > .card_title {
+  color: white;
+  animation-name: desdeArriba;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 
-  .card:hover > .card_info {
-    color: white;
-    animation-name: desdeIzquierda;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-  }
+.card:hover > .card_info {
+  color: white;
+  animation-name: desdeIzquierda;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 
-  .social_button:hover ~ .social_name {
-    display: inline-block;
-    animation-name: animacionRedes;
-    animation-duration: 300ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-  }
+.social_button:hover ~ .social_name {
+  display: inline-block;
+  animation-name: animacionRedes;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
 
-  .main_button:hover {
-    border-radius: 2em;
-    background-color: #ccc;
-    color: white;
-    text-shadow: 2px 2px 0px black;
-    animation-name: cambioColor;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
+.main_button:hover {
+  border-radius: 2em;
+  background-color: #ccc;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+  animation-name: cambioColor;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
-  .footer_menu-item:hover {
-    padding-left: 3em;
-  }
+.footer_menu-item:hover {
+  padding-left: 3em;
 }
 
 /*ANIMACIONES*/
