@@ -6,8 +6,8 @@ El proyecto de Registro de Equipos de Fútbol es una aplicación web que permite
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1 - Formnulario](/screenshots/Captura1.png)
-![Captura de pantalla 2 - Cards](/screenshots/Captura2.png)
+![Captura de pantalla 1 - Formnulario](./screenshots/Captura1.png)
+![Captura de pantalla 2 - Cards](./screenshots/Captura2.png)
 
 ## Tecnologías Utilizadas
 
