@@ -10,8 +10,8 @@ Este proyecto es ideal para aquellos que buscan una herramienta sencilla y funci
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](/screenshots/Captura1.png)
-![Captura de pantalla 2](/screenshots/Captura2.png)
+![Captura de pantalla 1](./screenshots/Captura1.png)
+![Captura de pantalla 2](./screenshots/Captura2.png)
 
 ## Tecnologías Utilizadas
 

@@ -8,9 +8,9 @@ La aplicación lleva un conteo en tiempo real de las preguntas respondidas corre
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](/screenshots/Captura1.png)
-![Captura de pantalla 2](/screenshots/Captura2.png)
-![Captura de pantalla 3](/screenshots/Captura3.png)
+![Captura de pantalla 1](./screenshots/Captura1.png)
+![Captura de pantalla 2](./screenshots/Captura2.png)
+![Captura de pantalla 3](./screenshots/Captura3.png)
 
 ## Tecnologías Utilizadas
 

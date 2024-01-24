@@ -20,20 +20,20 @@ Esta Pokedex ofrece a los amantes de Pokémon una plataforma interactiva y compl
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](/screenshots/Captura1.png)
-![Captura de pantalla 2](/screenshots/Captura2.png)
-![Captura de pantalla 3](/screenshots/Captura3.png)
-![Captura de pantalla 4](/screenshots/Captura4.png)
-![Captura de pantalla 5](/screenshots/Captura5.png)
-![Captura de pantalla 6](/screenshots/Captura6.png)
-![Captura de pantalla 7](/screenshots/Captura7.png)
-![Captura de pantalla 8](/screenshots/Captura8.png)
-![Captura de pantalla 9](/screenshots/Captura9.png)
-![Captura de pantalla 10](/screenshots/Captura10.png)
-![Captura de pantalla 11](/screenshots/Captura11.png)
-![Captura de pantalla 12](/screenshots/Captura12.png)
-![Captura de pantalla 13](/screenshots/Captura13.png)
-![Captura de pantalla 14](/screenshots/Captura14.png)
+![Captura de pantalla 1](./screenshots/Captura1.png)
+![Captura de pantalla 2](./screenshots/Captura2.png)
+![Captura de pantalla 3](./screenshots/Captura3.png)
+![Captura de pantalla 4](./screenshots/Captura4.png)
+![Captura de pantalla 5](./screenshots/Captura5.png)
+![Captura de pantalla 6](./screenshots/Captura6.png)
+![Captura de pantalla 7](./screenshots/Captura7.png)
+![Captura de pantalla 8](./screenshots/Captura8.png)
+![Captura de pantalla 9](./screenshots/Captura9.png)
+![Captura de pantalla 10](./screenshots/Captura10.png)
+![Captura de pantalla 11](./screenshots/Captura11.png)
+![Captura de pantalla 12](./screenshots/Captura12.png)
+![Captura de pantalla 13](./screenshots/Captura13.png)
+![Captura de pantalla 14](./screenshots/Captura14.png)
 
 ## Tecnologías Utilizadas
 
@@ -46,6 +46,8 @@ Esta Pokedex ofrece a los amantes de Pokémon una plataforma interactiva y compl
 - Clonar el repositorio "https://github.com/Calderon2307/Portafolio_Web".
 - Acceder a la carpeta "Frontend_Pokedex_JS".
 - Abrir "index.html" en el navegador.
+
+**Nota:** Para buscar pokemons por ejemplo mega evoluciones, se debe colo car el nomber en el formato "nombre-mega", lo mismo para bubscar otras formas pokemon.
 
 ## Otros Proyectos
 

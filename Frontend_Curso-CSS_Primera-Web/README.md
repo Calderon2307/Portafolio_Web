@@ -6,8 +6,8 @@ El Proyecto "Primera Web" es una iniciativa diseñada durante un curso de CSS co
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](/screenshots/Captura1.png)
-![Captura de pantalla 2](/screenshots/Captura2.png)
+![Captura de pantalla 1](./screenshots/Captura1.png)
+![Captura de pantalla 2](./screenshots/Captura2.png)
 
 ## Tecnologías Utilizadas
 

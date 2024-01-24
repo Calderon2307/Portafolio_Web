@@ -6,11 +6,11 @@
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](/screenshots/Captura1.png)
-![Captura de pantalla 2](/screenshots/Captura2.png)
-![Captura de pantalla 3](/screenshots/Captura3.png)
-![Captura de pantalla 4](/screenshots/Captura4.png)
-![Captura de pantalla 5](/screenshots/Captura5.png)
+![Captura de pantalla 1](./screenshots/Captura1.png)
+![Captura de pantalla 2](./screenshots/Captura2.png)
+![Captura de pantalla 3](./screenshots/Captura3.png)
+![Captura de pantalla 4](./screenshots/Captura4.png)
+![Captura de pantalla 5](./screenshots/Captura5.png)
 
 ## Tecnologías Utilizadas
 
