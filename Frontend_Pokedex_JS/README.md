@@ -34,6 +34,9 @@ Esta Pokedex ofrece a los amantes de Pokémon una plataforma interactiva y compl
 ![Captura de pantalla 12](./screenshots/Captura12.png)
 ![Captura de pantalla 13](./screenshots/Captura13.png)
 ![Captura de pantalla 14](./screenshots/Captura14.png)
+![Captura de pantalla 15](./screenshots/Captura15.png)
+![Captura de pantalla 16](./screenshots/Captura16.png)
+![Captura de pantalla 17](./screenshots/Captura17.png)
 
 ## Tecnologías Utilizadas
 

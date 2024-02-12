@@ -416,7 +416,7 @@ const eventos = () => {
     });
 
     pokeSection.addEventListener("click", e => {
-        console.log(e.target);
+        /* console.log(e.target); */
     });
 
     btnLimpiar.addEventListener("click", e => {
@@ -534,7 +534,6 @@ const fetchPokemonGroup = async (limit, offset) => {
 
             const _pokesPromises = data.results.map(poke => fetchSinglePokemon(poke.url));
             const _pokesResolves = await Promise.all(_pokesPromises);
-            console.log(_pokesResolves);
             return _pokesResolves;
         }
 
@@ -584,7 +583,6 @@ const fetchInfoSpeciesPokemon = async (urlSpecies, name) => {
                 } else return Promise.resolve(null);
             } else {
                 const nameMeaning = data.genera.find(des => des.language.name === 'es') || data.genera.find(des => des.language.name === 'en');
-                console.log(nameMeaning.genus);
                 if (nameMeaning) {
                     return Promise.resolve(nameMeaning.genus);
                 }
@@ -595,16 +593,33 @@ const fetchInfoSpeciesPokemon = async (urlSpecies, name) => {
     }
 };
 
+const fetchInfoNumPokedex = async (pokeURL) => {
+    try {
+        const _info = await fetch(pokeURL);
+        if (_info.ok) {
+            const _data = await _info.json();
+            return _data.id;
+        } else {
+            throw new Error('Error con la peticion');
+        }
+    } catch (error) {
+        console.error(error);
+    }
+};
+
 const castInfo = async (pokemon) => {
 
     try {
-        const name = await fetchInfoSpeciesPokemon(pokemon.species.url, true) ?? pokemon.name
+        const namesKeywords = ['mega', 'gmax', 'origin', 'alola', 'galar', 'therian', 'average', 'small', 'large', 'super', 'sensu', 'pom-pom', 'pau', 'baile'];
+
+        let name = namesKeywords.some(keyword => pokemon.name.includes(keyword)) ? pokemon.name : await fetchInfoSpeciesPokemon(pokemon.species.url, 'name') ?? pokeInfo.name;
         const meaning = await fetchInfoSpeciesPokemon(pokemon.species.url, false) ?? 'No meaning yet';
+        const pokedexNum = await fetchInfoNumPokedex(pokemon.species.url);
 
         return {
-            nombre: name.replace('-', ' '),
+            nombre: name.replace('-', ' ').toUpperCase(),
             significado: meaning,
-            pokedex: pokemon.id,
+            pokedex: pokedexNum,
             sprite: pokemon.sprites.other.home.front_default ?? "https://plantillasdememes.com/img/plantillas/pikachu-confundidosorprendidosonriendo2.jpg",
             shiny: pokemon.sprites.other.home.front_shiny ?? "https://plantillasdememes.com/img/plantillas/pikachu-confundidosorprendidosonriendo2.jpg",
             tipos: pokemon.types.map(t => {
@@ -618,6 +633,7 @@ const castInfo = async (pokemon) => {
             }),
             altura: pokemon.height,
             peso: pokemon.weight,
+            showPokeID: pokemon.id,
         };
 
     } catch (error) {
@@ -640,7 +656,10 @@ const crearBotones = (_info) => {
 const crearCard = (pokemon) => {
     const card = document.createElement('article');
     card.classList.add('card');
-    card.setAttribute("data-idPokemon", pokemon.pokedex);
+    card.setAttribute("data-idPokemon", pokemon.showPokeID);
+    card.addEventListener('click', () => {
+        localStorage.setItem('showPokemon', card.getAttribute("data-idPokemon"));
+    });
 
     let tipos = pokemon.tipos.map(tipo => {
         return `<div class="tipo ${tipo}">${tipo.toUpperCase()}</div>`;
@@ -680,7 +699,7 @@ const crearCard = (pokemon) => {
     }).reduce((acumulador, valorActual) => acumulador + valorActual, 0);
 
     card.innerHTML = `
-    <div class="card-inner">
+    <a href="/pages/showPokemon.html" class="card-inner">
     <section class="card-front">
         <div class="pokeImg">
             <figure class="sprite">
@@ -710,7 +729,7 @@ const crearCard = (pokemon) => {
         </article>
         <p class="total-stats">Total Stats: ${totalStats}</p>
     </section>
-    </div>
+    </a>
     `;
 
     return card;

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/601px-Pokebola-pokeball-png-0.png"
+        type="image/x-icon">
+    <title>Pokemon | </title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            Pokemon
+        </h1>
+        <button class="btn limpiarPantalla">
+            LIMPIAR PANTALLA
+        </button>
+    </header>
+    <main>
+        <article class="pokeInfoContainer">
+
+            <section class="firstSectionInfo">
+
+                <section class="spriteButton">
+                    <p>Normal</p>
+                    <button class="switch">
+                        <div class="buttonSwitch"></div>
+                    </button>
+                    <p>Shiny</p>
+                </section>
+
+                <section class="imgSection">
+                    <figure class="imgContainer">
+                        <!-- SPRITE NORMAL Y SHINY DEL POKEMON-->
+                    </figure>
+                </section>
+
+                <section class="types">
+                    <!-- TIPOS DEL POKEMON -->
+                </section>
+
+                <section class="infoPokemon">
+                    <p class="pokeNameMeaning center"><!-- SIGNIFICADO DEL NOMBRE --></p>
+                    <p class="pokedexNumberContainer">Numero de la Pokedex: <span
+                            class="pokedexNumber"><!-- NUMERO DE LA POKEDEX --></span></p>
+                    <div class="pokeDimensions">
+                        <p class="pokeHeightContainer">Altura: <span class="pokeHeight"><!-- ALTURA EN METROS --></span>
+                        </p>
+                        <p class="pokeWeightContainer">Peso: <span class="pokeWeight"><!-- PESO EN KILOGRAMOS --></span>
+                        </p>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="secondSectionInfo">
+
+                <section class="pokeNameContanier">
+                    <p class="pokeName" title="Nombre del Pokemon"><!-- NOMBRE DEL POKEMON --></p>
+                </section>
+
+                <section class="pokeDescriptionContainer">
+                    <p class="desTitle">ENTRADA DE LA POKEDEX:</p>
+                    <p class="pokeDescription">
+                        <!-- ENTRADA DE LA POKEDEX -->
+                    </p>
+                    <p class="pokedexName"><!-- POKEDEX --></p>
+                </section>
+
+                <section class="pokeStatsContainer">
+                    <p class="statsTitle">STATS</p>
+                    <div class="statsWrapper">
+                        <div class="stats-container">
+                            <section class="normalStats">
+                                <!-- ESTADISTICAS DE SALUD, ATAQUE Y DEFENSA -->
+                            </section>
+                        </div>
+                        <hr>
+                        <div class="stats-container">
+                            <section class="specialStats">
+                                <!-- ESTADISTICAS DE ATAQUE ESPECAL, DEFENSA ESPECIAL Y VELOCIDAD -->
+                            </section>
+                        </div>
+                    </div>
+                    <p class="totalStats">Total Stats: <span class="total"><!-- ESTADISTICAS TOTALES --></span></p>
+                </section>
+
+                <section class="pokeEvoChainContainer">
+                    <p class="chainTitle">Cadena evolutiva</p>
+                    <div class="chainWrapper">
+                        <!-- CADENA EVOLUTIVA DEL POKEMON -->
+                    </div>
+                </section>
+
+                <section class="pokeFormsContainer">
+                    <p class="formsTitle">Otras formas</p>
+                    <div class="formsWrapper">
+                        <!-- FORMAS ALTERNAS DEL POKEMON -->
+                    </div>
+                </section>
+
+            </section>
+        </article>
+        <figure class="loading-container">
+            <img src="/assets/loading3.gif" alt="loading..." class="loading">
+        </figure>
+    </main>
+    <footer>
+        <p>
+            Creado por: Federico Calderon
+        </p>
+    </footer>
+    <script src="/services/showPokemon.js"></script>
+</body>
+
+</html>
