@@ -95,7 +95,6 @@ const buscarGrupoPokemon = async (cantidad, inicio) => {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${cantidad}&offset=${inicio}`);
         if (response.ok) {
             const data = await response.json();
-            console.log(data.results);
             const infoPokePromises = data.results.map(poke => buscarPokemon(poke.url));
             const infoPoke = await Promise.all(infoPokePromises);
             return infoPoke;
@@ -149,7 +148,6 @@ const fetchInfoSpeciesPokemon = async (urlSpecies, name) => {
                 } else return Promise.resolve(null);
             } else {
                 const nameMeaning = data.genera.find(des => des.language.name === 'es') || data.genera.find(des => des.language.name === 'en');
-                console.log(nameMeaning.genus);
                 if (nameMeaning) {
                     return Promise.resolve(nameMeaning.genus);
                 }

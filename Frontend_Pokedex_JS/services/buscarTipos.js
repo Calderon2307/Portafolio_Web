@@ -53,8 +53,7 @@ const fetchPokemonGroup = async (idType) => {
         const response = await fetch(`https://pokeapi.co/api/v2/type/${idType}`);
         if (response.ok) {
             const data = await response.json();
-            damageTypes = { ...data.damage_relations }
-            console.log(damageTypes);
+            damageTypes = { ...data.damage_relations };
             typeName = data.name;
             const _pokesPromises = data.pokemon.map(poke => fetchSinglePokemon(poke.pokemon.url));
             const _pokesResolves = await Promise.all(_pokesPromises);
@@ -106,7 +105,6 @@ const fetchInfoSpeciesPokemon = async (urlSpecies, name) => {
                 } else return Promise.resolve(null);
             } else {
                 const nameMeaning = data.genera.find(des => des.language.name === 'es') || data.genera.find(des => des.language.name === 'en');
-                console.log(nameMeaning.genus);
                 if (nameMeaning) {
                     return Promise.resolve(nameMeaning.genus);
                 }

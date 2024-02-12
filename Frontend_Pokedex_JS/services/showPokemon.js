@@ -198,7 +198,6 @@ const fetchPokemon = async () => {
             castPoke = await castInfo(_data);
             printInfo(castPoke);
             loadingHandler(false);
-            /* console.log(castPoke); */
         }
 
     } catch (error) {
@@ -253,10 +252,7 @@ const fetchInfoSpeciesPokemon = async (pokeURL, find) => {
                             version: text.version.name.toUpperCase(),
                         }
                     });
-                }
-
-
-                console.log(description);
+                };
 
                 if (description.length > 0) return description;
                 else return null;
