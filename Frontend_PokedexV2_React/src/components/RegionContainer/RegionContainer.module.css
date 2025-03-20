@@ -1,0 +1,113 @@
+.regionContainer {
+  flex: 1 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+  position: relative;
+  border: 1px solid rgb(var(--text-dark-color));
+  transition: 250ms 250ms all ease;
+  overflow: hidden;
+}
+
+.regionContainer::after {
+  content: '';
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: linear-gradient(
+    rgba(var(--background-color), 0.5),
+    rgba(var(--background-color), 0.5)
+  );
+  transition: all ease-in 150ms;
+}
+
+.regionContainer:hover::after {
+  min-height: 0;
+}
+
+.regionContainer:hover {
+  min-width: 60%;
+}
+
+.regionTitle {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  background-color: rgba(var(--text-dark-color), 0.7);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: rgb(var(--text-light-color));
+  overflow: hidden;
+  transition: 250ms 250ms all ease;
+}
+
+.regionContainer:hover .regionTitle {
+  opacity: 1;
+  padding: 1rem;
+}
+
+.regionImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.regionIndex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: rgb(var(--text-dark-color));
+  transform: translate(-50%, -50%);
+  transition: all ease-in 250ms;
+}
+
+.regionContainer:hover .regionIndex {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .regionIndex {
+    font-size: 1.5rem;
+  }
+
+  .regionTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .regionContainer {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .regionContainer:hover {
+    min-height: 60%;
+  }
+
+  .regionIndex {
+    font-size: 1.1rem;
+  }
+
+  .regionTitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .regionIndex {
+    font-size: 1rem;
+  }
+
+  .regionTitle {
+    font-size: 1rem;
+  }
+}

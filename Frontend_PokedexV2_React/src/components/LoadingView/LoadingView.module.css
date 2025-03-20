@@ -1,0 +1,96 @@
+.loadingComponent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(var(--background-color));
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.gifContainer {
+  width: 500px;
+  height: 300px;
+}
+
+.gif {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.messageSection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+}
+
+.messagetitle {
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(var(--text-dark-color));
+}
+
+.message {
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+}
+
+@media (max-width: 1024px) {
+  .gifContainer {
+    width: 400px;
+    height: 200px;
+  }
+
+  .messagetitle {
+    font-size: 1.3rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gifContainer {
+    width: 300px;
+    height: 100px;
+  }
+
+  .messagetitle {
+    font-size: 1.1rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .gifContainer {
+    width: 200px;
+    height: 100px;
+  }
+
+  .messagetitle {
+    font-size: 1rem;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+}

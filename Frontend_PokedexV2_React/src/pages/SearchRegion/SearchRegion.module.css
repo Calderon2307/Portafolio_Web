@@ -1,0 +1,58 @@
+.regionsWrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  background-size: 15%;
+  background-image: linear-gradient(
+      rgba(var(--background-color), 0.9),
+      rgba(var(--background-color), 0.9)
+    ),
+    url(/src/assets/styles/background.jpg);
+  width: 100%;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  color: rgb(var(--text-dark-color));
+}
+
+.regionsContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 80%;
+  height: 75vh;
+
+  position: relative;
+  border: 2px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .regionsContainer {
+    width: 90%;
+    height: 75vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .regionsContainer {
+    flex-flow: column nowrap;
+    width: 90%;
+    height: 75vh;
+  }
+}

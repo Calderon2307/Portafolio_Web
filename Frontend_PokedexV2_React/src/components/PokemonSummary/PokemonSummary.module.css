@@ -1,0 +1,431 @@
+.summarySection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgb(var(--background-color));
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.changeSpriteSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text {
+  font-family: var(--text-font);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: rgb(var(--text-dark-color));
+  transition: all 250ms ease-in-out;
+}
+
+.shinyText {
+  text-shadow: 0px 0px 10px rgb(var(--POKEDEX-color));
+}
+
+.shinyButton {
+  width: 75px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 50px;
+  background-color: rgb(var(--primary-color));
+  cursor: pointer;
+}
+
+.shinyToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  position: relative;
+  left: 0;
+  margin: 0;
+  border-radius: 50%;
+  background-color: rgb(var(--background-color));
+  box-shadow: 0px 0px 5px rgb(var(--text-dark-color)) inset;
+  transition: all 150ms linear;
+}
+
+.moveToRight {
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: rgb(var(--POKEDEX-color));
+}
+
+.shinyIcon {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+
+.spriteSection {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pokemonName {
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.title {
+  font-family: var(--title-font);
+  color: rgb(var(--text-dark-color));
+}
+
+.pokemonSpriteContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 275px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.pokemonSprite {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.typesContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.type {
+  display: inline-block;
+  width: 125px;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  font-family: var(--type-font);
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.nameMeaning {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  color: rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.dataSection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.2rem;
+  width: 70%;
+  cursor: default;
+}
+
+.data {
+  font-family: var(--text-font);
+  color: rgb(var(--text-dark-color));
+}
+
+.dataTitle {
+  font-family: var(--title-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.extraSection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.genderRateSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  cursor: default;
+}
+
+.genderContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.1rem;
+  width: fit-content;
+}
+
+.genderIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.gender {
+  font-family: var(--title-font);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.soundSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* .pokemonCry {
+  display: none;
+} */
+
+.soundButton {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px rgb(var(--text-dark-color)) inset;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.soundIcon {
+  display: inline-block;
+  justify-self: end;
+  align-self: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .spriteSection {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .pokemonSpriteContainer {
+    width: 250px;
+    height: 250px;
+  }
+
+  .typesContainer {
+    gap: 0.5rem;
+  }
+
+  .type {
+    width: 100px;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .pokemonSpriteContainer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .type {
+    width: 90px;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .dataSection {
+    gap: 0.2rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .changeSpriteSection {
+    gap: 0.5rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .shinyButton {
+    width: 50px;
+    height: 25px;
+  }
+
+  .shinyToggle {
+    width: 25px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .summarySection {
+    display: grid;
+    grid-template-areas:
+      '. shinyToggle .'
+      'spriteContainer dataSection extraSection'
+      'spriteContainer dataSection extraSection';
+    gap: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .changeSpriteSection {
+    grid-area: shinyToggle;
+  }
+
+  .spriteSection {
+    grid-area: spriteContainer;
+  }
+
+  .dataSection {
+    grid-area: dataSection;
+  }
+
+  .extraSection {
+    grid-area: extraSection;
+  }
+}
+
+@media (max-width: 540px) {
+  .summarySection {
+    display: grid;
+    grid-template-areas:
+      '. shinyToggle .'
+      '. spriteContainer .'
+      '. dataSection .'
+      '. extraSection .';
+    gap: 0;
+    padding: 0.5rem;
+  }
+
+  .changeSpriteSection {
+    grid-area: shinyToggle;
+  }
+
+  .spriteSection {
+    grid-area: spriteContainer;
+  }
+
+  .pokemonName {
+    font-size: 1.1rem;
+  }
+
+  .nameMeaning {
+    font-size: 0.9rem;
+  }
+
+  .pokemonSpriteContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .typesContainer {
+    gap: 0.5rem;
+  }
+
+  .type {
+    width: 75px;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .dataSection {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    grid-area: dataSection;
+  }
+
+  .data {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 0.9rem;
+  }
+
+  .dataTitle {
+    font-size: 1rem;
+  }
+
+  .extraSection {
+    flex-flow: column nowrap;
+    grid-area: extraSection;
+  }
+
+  .genderRateSection {
+    width: 100%;
+  }
+
+  .genderIcon {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .gender {
+    font-size: 0.8rem;
+  }
+
+  .soundButton {
+    gap: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .soundIcon {
+    width: 1rem;
+    height: 1em;
+  }
+}

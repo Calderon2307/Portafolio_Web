@@ -19,7 +19,7 @@ El proyecto "Pokedex" es una aplicación desarrollada en JavaScript que proporci
 6. **Pagina de cadaPokemon:** Al hacer click en alguna card, se muestra la informacion mas a detalle de este pokemon, incluyendo entradas del mismo de pokedex aleatorias cada que se recarga la pagina, cadena evolutiva y otras formas del mismo Pokemon.
 
 Esta Pokedex ofrece a los amantes de Pokémon una plataforma interactiva y completa para explorar y conocer más sobre sus criaturas favoritas.
-
+quien encuentre este comment se la come
 ## Capturas de Pantalla
 
 ![Captura de pantalla 1](./screenshots/Captura1.png)

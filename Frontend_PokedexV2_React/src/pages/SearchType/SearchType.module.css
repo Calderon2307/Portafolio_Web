@@ -1,0 +1,80 @@
+.typesWrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  background-size: 15%;
+  background-image: linear-gradient(
+      rgba(var(--background-color), 0.8),
+      rgba(var(--background-color), 0.8)
+    ),
+    url(/src/assets/styles/background.jpg);
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  color: rgb(var(--text-dark-color));
+}
+
+.typesContainer {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  width: 60%;
+}
+
+.noTypesMessage {
+  font-family: var(--title-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(var(--text-dark-color));
+}
+
+@media (max-width: 1300px) {
+  .typesContainer {
+    gap: 1.5rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .typesContainer {
+    gap: 1.5rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .typesContainer {
+    gap: 1rem 0.8rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}

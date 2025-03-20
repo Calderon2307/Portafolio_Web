@@ -1,0 +1,396 @@
+.dialog {
+  width: 950px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  border: 2px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  background-color: rgb(var(--text-light-color));
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.dialog.openDialog {
+  transform-origin: center;
+  animation: openD 300ms ease 1 forwards;
+}
+
+.dialog.closeDialog {
+  transform-origin: center;
+  animation: closeD 300ms ease 1 forwards;
+}
+
+.dialog.animating {
+  transition: all 250ms ease-in-out;
+}
+
+.dialog::backdrop {
+  background-color: rgba(var(--background-color), 0.9);
+  animation: fade-in 300ms ease;
+}
+
+.dialogContent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0.5rem 0rem;
+}
+
+.closeButton {
+  all: unset;
+  width: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.closeIcon {
+  width: 100%;
+}
+
+.dialogTitle {
+  margin: 1rem 0rem;
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(var(--text-dark-color));
+}
+
+.mainContent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.searchBarContent {
+  width: 100%;
+}
+
+.pokemonList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem 1rem;
+  width: 100%;
+  height: 500px;
+  padding-top: 0.1rem;
+  padding-bottom: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.pokemonButton {
+  padding: 0.2rem;
+  position: relative;
+  border: none;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.pokemonButton::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pokemonButton:hover {
+  outline: 1px solid rgb(var(--text-dark-color));
+}
+
+.selectedPokemonWrapper {
+  position: relative;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -4%;
+  left: 100%;
+  transform: translate(-100%, -4%);
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(var(--acent-color));
+  transition: all 250ms;
+}
+
+.iconClose {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+.contentSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-size: 15%;
+  background-image: linear-gradient(
+      rgba(var(--background-color), 0.85),
+      rgba(var(--background-color), 0.85)
+    ),
+    url(/src/assets/styles/background.jpg);
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: '. title shinyButton';
+  width: 50%;
+}
+
+.title {
+  grid-area: title;
+  justify-self: end;
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(var(--text-dark-color));
+}
+
+.shinyButton {
+  position: absolute;
+  top: 4.5rem;
+  left: 1rem;
+  grid-area: shinyButton;
+  justify-self: center;
+  width: 125px;
+  padding: 0.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(var(--text-dark-color));
+  transition: all 250ms;
+}
+
+.shinyButton:hover {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-light-color));
+  cursor: pointer;
+}
+
+.shinyActive {
+  background-color: rgb(var(--POKEDEX-color));
+}
+
+.shinyButton:disabled {
+  background-color: rgba(var(--background-color), 0.85);
+  pointer-events: none;
+}
+
+.teamWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  width: 50%;
+}
+
+.saveBtnSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.saveBtn {
+  padding: 1rem 2rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(var(--text-dark-color));
+  transition: all 250ms;
+}
+
+.saveBtn:hover {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-light-color));
+  cursor: pointer;
+}
+
+.saveBtn:disabled {
+  background-color: rgba(var(--background-color), 0.85);
+  pointer-events: none;
+}
+
+.loadingMessage {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--primary-color));
+}
+
+.emptyPokemonMessage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+}
+
+.emptyPokemonTitle {
+  font-family: var(--title-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes openD {
+  from {
+    top: -100%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes closeD {
+  from {
+    top: 50%;
+    opacity: 1;
+  }
+  to {
+    top: -100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1376px) {
+  .teamWrapper {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1066px) {
+  .teamWrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .teamWrapper {
+    width: 70%;
+  }
+
+  .saveBtn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .shinyButton {
+    top: 4.5rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .teamWrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shinyButton {
+    top: 5rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .teamWrapper {
+    width: 85%;
+  }
+
+  .closeBtn {
+    width: 20px;
+    height: 20px;
+    top: -7%;
+    left: 105%;
+  }
+}
+
+@media (max-width: 470px) {
+  .teamWrapper {
+    gap: 1.2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .contentSection {
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem;
+    padding-top: 2.8rem;
+  }
+
+  .shinyButton {
+    width: 100px;
+    top: 5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .shinyButton {
+    width: 100px;
+    top: 6rem;
+    font-size: 0.8rem;
+  }
+}

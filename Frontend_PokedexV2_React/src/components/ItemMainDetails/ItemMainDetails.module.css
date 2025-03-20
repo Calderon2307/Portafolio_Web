@@ -1,0 +1,160 @@
+.detailsSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  gap: 1rem;
+  max-width: 75vw;
+  height: calc(100vh - 4rem);
+  padding: 2rem 1.5rem;
+  background-size: 15%;
+  background-image: linear-gradient(
+      rgba(var(--background-color), 0.8),
+      rgba(var(--background-color), 0.8)
+    ),
+    url(/src/assets/styles/background.jpg);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.nameSection,
+.effectSection,
+.attributesSection,
+.cardsSection {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: fit-content;
+}
+
+.itemDescriptionTitle,
+.itemEffectTitle,
+.itemAttributesTitle,
+.itemTCGCardsTitle {
+  font-family: var(--title-font);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.itemDescription,
+.itemEffect,
+.noAttributes {
+  font-family: var(--text-font);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.attributesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.attribute {
+  width: 150px;
+  padding: 0.8rem 0rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.cardsSection {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.tcgCardsContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  padding: 1.2rem 1rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: none;
+  cursor: grab;
+  user-select: none;
+}
+
+.tcgCardsContainer:active {
+  cursor: grabbing;
+}
+
+.tcgCardsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tcgCardImgContainer {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms ease-in-out;
+}
+
+.tcgCardImg {
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in-out;
+  pointer-events: none;
+}
+
+.tcgCardImgContainer:hover {
+  scale: 1.1;
+  z-index: 1;
+}
+
+.noCardsMessage {
+  font-family: var(--title-font);
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+}
+
+.tcgCardsCount {
+  font-family: var(--title-font);
+  text-transform: capitalize;
+  color: rgb(var(--text-dark-color));
+}
+
+@media (max-width: 1024px) {
+  .detailsSection {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .attributesContainer {
+    justify-content: center;
+  }
+}

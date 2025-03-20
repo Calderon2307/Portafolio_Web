@@ -1,0 +1,71 @@
+.form {
+  width: 100%;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  font-family: var(--text-font);
+  font-size: 1rem;
+  color: rgba(var(--text-dark-color), 0.6);
+  z-index: 1;
+  pointer-events: none;
+  transition: all 150ms ease-in-out;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+  outline: none;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  top: 0;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgba(var(--text-dark-color), 1);
+  background-image: linear-gradient(transparent 0 50%, white 50% 100%);
+}
+
+.button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 97%;
+  position: absolute;
+  bottom: 0%;
+  right: 0px;
+  transform: translateY(-0%);
+  border-top: 1px solid rgb(var(--text-dark-color));
+  border-right: 1px solid rgb(var(--text-dark-color));
+  border-bottom: 1px solid rgb(var(--text-dark-color));
+  background-color: rgb(var(--secondary-color));
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .form {
+    grid-area: searchBar;
+  }
+}

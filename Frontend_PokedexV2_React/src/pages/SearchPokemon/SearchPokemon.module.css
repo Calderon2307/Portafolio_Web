@@ -1,0 +1,72 @@
+.wrapperBody {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-size: 15%;
+  background-image: linear-gradient(
+      rgba(var(--background-color), 0.8),
+      rgba(var(--background-color), 0.8)
+    ),
+    url(/src/assets/styles/background.jpg);
+}
+
+.title {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(var(--text-dark-color));
+}
+
+.cardsSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.messageContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.message {
+  font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgb(var(--text-dark-color));
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}

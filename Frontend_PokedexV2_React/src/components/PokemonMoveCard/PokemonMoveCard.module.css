@@ -1,0 +1,112 @@
+.movementCard {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 275px;
+  height: 300px;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: default;
+}
+
+.cardHeader {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(var(--text-dark-color));
+}
+
+.movementName {
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.cardBody {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.info {
+  font-family: var(--text-font);
+  color: rgb(var(--text-dark-color));
+}
+
+.subtitle {
+  font-family: var(--title-font);
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 910px) {
+  .movementCard {
+    width: 225px;
+    height: 275px;
+  }
+
+  .cardHeader {
+    padding: 0.5rem;
+  }
+
+  .movementName {
+    font-size: 1.1rem;
+  }
+
+  .cardBody {
+    padding: 0.5rem;
+  }
+
+  .info {
+    font-size: 0.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 525px) {
+  .movementCard {
+    width: 175px;
+    height: 250px;
+  }
+
+  .cardHeader {
+    padding: 0.5rem;
+  }
+
+  .movementName {
+    font-size: 1rem;
+  }
+
+  .cardBody {
+    padding: 0.5rem;
+  }
+
+  .info {
+    font-size: 0.7rem;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}

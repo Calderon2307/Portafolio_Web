@@ -1,0 +1,108 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(var(--primary-color));
+  z-index: 100;
+}
+
+.titleLink {
+  justify-self: start;
+  align-self: center;
+  text-decoration: none;
+}
+
+.title {
+  font-family: var(--POKEDEX-font);
+  color: rgb(var(--POKEDEX-color));
+  text-transform: uppercase;
+  text-shadow:
+    -5px 5px 0px rgb(var(--text-dark-color)),
+    -4.5px 4.5px 0px rgb(var(--text-dark-color)),
+    -4px 4px 0px rgb(var(--text-dark-color)),
+    -3.5px 3.5px 0px rgb(var(--text-dark-color)),
+    -3px 3px 0px rgb(var(--text-dark-color)),
+    -2.5px 2.5px 0px rgb(var(--text-dark-color)),
+    -2px 2px 0px rgb(var(--text-dark-color)),
+    -1.5px 1.5px 0px rgb(var(--text-dark-color)),
+    -1px 1px 0px rgb(var(--text-dark-color)),
+    -0.5px 0.5px 0px rgb(var(--text-dark-color));
+}
+
+.button {
+  all: unset;
+  justify-self: end;
+  grid-column: 3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(var(--secondary-color));
+  border-radius: 0.5rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  text-align: center;
+  color: rgb(var(--text-dark-color));
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.button:hover {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-light-color));
+}
+
+.partial {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: transparent;
+  height: 4rem;
+}
+
+.spacer {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    grid-template-areas:
+      'title . button'
+      'searchBar searchBar searchBar';
+    gap: 1rem 0rem;
+    height: auto;
+  }
+
+  .titleLink {
+    grid-area: title;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    grid-area: button;
+    padding: 0.7rem 0.3rem;
+    font-size: 0.8rem;
+  }
+}

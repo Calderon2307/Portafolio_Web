@@ -1,0 +1,141 @@
+.mainPage {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vw;
+  height: 100vh;
+  background-size: 15%;
+  background-image: linear-gradient(
+      rgba(var(--background-color), 0.8),
+      rgba(var(--background-color), 0.8)
+    ),
+    url(/src/assets/styles/background.jpg);
+  position: relative;
+  overflow: auto;
+  /* z-index: 1; */
+}
+
+.wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: rgb(var(--POKEDEX-color));
+  font-family: var(--POKEDEX-font);
+  font-size: 48px;
+  text-shadow:
+    -6px 6px 0px rgb(var(--primary-color)),
+    -5.5px 5.5px 0px rgb(var(--primary-color)),
+    -5px 5px 0px rgb(var(--primary-color)),
+    -4.5px 4.5px 0px rgb(var(--primary-color)),
+    -4px 4px 0px rgb(var(--primary-color)),
+    -3.5px 3.5px 0px rgb(var(--primary-color)),
+    -3px 3px 0px rgb(var(--primary-color)),
+    -2.5px 2.5px 0px rgb(var(--primary-color)),
+    -2px 2px 0px rgb(var(--primary-color)),
+    -1.5px 1.5px 0px rgb(var(--primary-color)),
+    -1px 1px 0px rgb(var(--primary-color)),
+    -0.5px 0.5px 0px rgb(var(--primary-color));
+  cursor: default;
+}
+
+.buttonsSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  width: 50%;
+  /*flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 calc(50% - 1rem);
+  width: 100%;
+  height: 175px;
+  padding: 1rem;
+  background-color: rgb(var(--primary-color));
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  color: rgb(var(--text-light-color));
+  font-family: var(--text-font);
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 250ms;
+}
+
+.button:nth-child(odd):last-child {
+  grid-column: span 2;
+}
+
+.button:hover {
+  background-color: rgb(var(--acent-color));
+  outline: 2px solid rgb(var(--text-dark-color));
+  /* color: rgb(var(--text-dark-color)); */
+  /* background-image: url(/src/assets/pokemonTypes/dragon.png); */
+}
+
+@media (max-width: 1024px) {
+  .buttonsSection {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 1rem;
+  }
+
+  .buttonsSection {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .button:nth-child(odd):last-child {
+    grid-column: span 1;
+  }
+
+  .button {
+    width: 100%;
+    height: 100px;
+    padding: 0rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .buttonsSection {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .button {
+    width: 100%;
+    height: 75px;
+    padding: 0rem;
+    font-size: 0.9rem;
+  }
+}

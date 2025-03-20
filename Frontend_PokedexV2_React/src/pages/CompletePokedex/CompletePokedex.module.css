@@ -1,0 +1,393 @@
+.wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  background-color: rgb(var(--background-color));
+}
+
+.title {
+  width: 100%;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(var(--text-dark-color));
+}
+
+.type {
+  display: inline-block;
+  width: 150px;
+  padding: 0.2rem 1rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgb(var(--text-dark-color));
+  color: rgb(var(--text-light-color));
+}
+
+.generationToggleContanier {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.subtitleGen {
+  font-family: var(--text-font);
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+  scale: 0.9;
+  transition: all 750ms;
+}
+
+.subtitleSelected {
+  text-shadow: 0px 0px 5px rgb(var(--acent-color));
+  scale: 1.2;
+}
+
+.toggleGenButton {
+  width: 75px;
+  height: 25px;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  background-color: rgb(var(--text-light-color));
+  cursor: pointer;
+}
+
+.toggleGen {
+  position: relative;
+  left: 0%;
+  width: 25px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(var(--primary-color));
+  box-shadow: 0px 0px 5px rgb(var(--text-dark-color)) inset;
+  transition: all 250ms;
+}
+
+.genActive {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.genDisabled {
+  left: 0%;
+}
+
+.pokedexesButtonsConainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  padding: 0rem 1rem;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.selectPokedexButton {
+  width: 150px;
+  padding: 0.5rem 0.2rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(var(--text-dark-color));
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.selectPokedexButton:hover {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-light-color));
+}
+
+.pokedexButtonSelected {
+  background-color: rgb(var(--acent-color));
+  font-weight: 600;
+  color: rgb(var(--text-light-color));
+}
+
+.subtitlePokedex {
+  font-family: var(--title-font);
+  color: rgb(var(--text-dark-color));
+}
+
+.pokedexSelectedName {
+  text-transform: capitalize;
+}
+
+.cardsSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 2.5rem 2.5rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--primary-color));
+  font-family: var(--text-font);
+  font-weight: 600;
+  color: rgb(var(--text-light-color));
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.paginationIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background-color: rgb(var(--acent-color));
+}
+
+.pagesContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* gap: 0.2rem; */
+}
+
+.pageDots {
+  background-color: transparent;
+  font-family: var(--title-font);
+  cursor: default;
+}
+
+.pageButton {
+  width: 25px;
+  padding: 0.5rem 0.3rem;
+  border: none;
+  background-color: transparent;
+  font-family: var(--title-font);
+  font-size: 0.9rem;
+  color: rgb(var(--text-dark-color));
+  cursor: pointer;
+}
+
+.pageButton:hover {
+  text-decoration: underline;
+}
+
+.pageButtonSelected {
+  background-color: rgb(var(--acent-color));
+  font-weight: 500;
+  color: rgb(var(--text-light-color));
+  pointer-events: none;
+}
+
+.emptyPokemonMessage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+}
+
+.emptyPokemonTitle {
+  font-family: var(--title-font);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1170px) {
+  .cardsSection {
+    gap: 1.5rem;
+    padding: 1rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    width: 100%;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .type {
+    width: 100px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .generationToggleContanier {
+    gap: 1rem;
+  }
+
+  .subtitleGen {
+    font-size: 0.8rem;
+  }
+
+  .toggleGenButton {
+    width: 50px;
+    height: 20px;
+  }
+
+  .toggleGen {
+    width: 20px;
+    height: 100%;
+  }
+
+  .pokedexesButtonsConainer {
+    gap: 1.5rem;
+  }
+
+  .buttonsWrapper {
+    gap: 1rem;
+  }
+
+  .selectPokedexButton {
+    width: 125px;
+    padding: 0.7rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .subtitlePokedex {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .buttonsContainer {
+    gap: 0.5rem;
+  }
+
+  /* .paginationIcon {
+    width: 16px;
+    height: 16px;
+  } */
+
+  .pageButton {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsSection {
+    gap: 0.9rem 0.6rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    width: 100%;
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .type {
+    width: 75px;
+    padding: 0.2rem;
+  }
+
+  .generationToggleContanier {
+    gap: 0.7rem;
+  }
+
+  .subtitleGen {
+    font-size: 0.7rem;
+  }
+
+  .toggleGenButton {
+    width: 50px;
+    height: 20px;
+  }
+
+  .toggleGen {
+    width: 20px;
+    height: 100%;
+  }
+
+  .pokedexesButtonsConainer {
+    gap: 1rem;
+  }
+
+  .buttonsWrapper {
+    gap: 0.5rem;
+  }
+
+  .selectPokedexButton {
+    width: 125px;
+    padding: 0.7rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .subtitlePokedex {
+    font-size: 0.8rem;
+  }
+
+  .buttonsContainer {
+    gap: 0.2rem;
+  }
+
+  .button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .paginationIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .pageButton {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}

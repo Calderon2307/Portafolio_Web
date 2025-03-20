@@ -1,0 +1,393 @@
+.dialog {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  border: 2px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  background-color: rgb(var(--background-color));
+  z-index: 1;
+}
+
+.dialog.openDialog {
+  transform-origin: center;
+  animation: openD 300ms ease 1 forwards;
+}
+
+.dialog.closeDialog {
+  transform-origin: center;
+  animation: closeD 300ms ease 1 forwards;
+}
+
+.dialog.animating {
+  transition: all 250ms ease-in-out;
+}
+
+.dialog::backdrop {
+  background-color: rgba(var(--background-color), 0.9);
+  animation: fade-in 300ms ease;
+}
+
+.dialogContent {
+  padding: 1rem;
+  width: 100%;
+}
+
+.closeButton {
+  all: unset;
+  width: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.closeIcon {
+  width: 100%;
+}
+
+.dialogTitle {
+  margin: 1rem 0rem;
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(var(--text-dark-color));
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  width: 150px;
+  padding: 0.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.2rem;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--text-dark-color));
+  transition: all 250ms ease-in;
+  cursor: pointer;
+}
+
+.categorySelected {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-light-color));
+  pointer-events: none;
+}
+
+.category:nth-child(even) {
+  justify-self: end;
+}
+
+.category:nth-child(odd) {
+  justify-self: start;
+}
+
+.category:first-child {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.category:hover {
+  background-color: rgb(var(--acent-color));
+  color: rgb(var(--text-light-color));
+}
+
+.mainSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(var(--background-color));
+}
+
+.infoSection {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.title {
+  color: rgb(var(--text-dark-color));
+  font-family: var(--title-font);
+}
+
+.filterSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.subTitle {
+  justify-self: center;
+  align-self: center;
+  font-family: var(--title-font);
+  color: rgb(var(--text-dark-color));
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.categoryButton {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--secondary-color));
+  font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(var(--text-dark-color));
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+
+.categoryButton:active {
+  background-color: rgb(49, 187, 49);
+}
+
+.icon {
+  width: 25px;
+}
+
+.cardsSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 0.5rem;
+  background-color: rgb(var(--primary-color));
+  font-family: var(--text-font);
+  font-weight: 600;
+  color: rgb(var(--text-light-color));
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.paginationIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background-color: rgb(var(--acent-color));
+}
+
+.pagesContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* gap: 0.2rem; */
+}
+
+.pageDots {
+  background-color: transparent;
+  font-family: var(--title-font);
+  cursor: default;
+}
+
+.pageButton {
+  width: 30px;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-family: var(--title-font);
+  font-size: 0.9rem;
+  color: rgb(var(--text-dark-color));
+  cursor: pointer;
+}
+
+.pageButton:hover {
+  text-decoration: underline;
+}
+
+.pageButtonSelected {
+  background-color: rgb(var(--acent-color));
+  font-weight: 500;
+  color: rgb(var(--text-light-color));
+  pointer-events: none;
+}
+
+.emptyPokemonMessage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(var(--text-dark-color));
+}
+
+.emptyPokemonTitle {
+  font-family: var(--title-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes openD {
+  from {
+    top: -100%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes closeD {
+  from {
+    top: 50%;
+    opacity: 1;
+  }
+  to {
+    top: -100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  .buttonsContainer {
+    gap: 0.5rem;
+  }
+
+  /* .paginationIcon {
+    width: 16px;
+    height: 16px;
+  } */
+
+  .pageButton {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .subTitle {
+    font-size: 1rem;
+  }
+
+  .categoryButton {
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mainSection {
+    padding: 0.5rem;
+  }
+
+  .category {
+    width: 100px;
+    padding: 0.5rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .cardsSection {
+    gap: 0.5rem;
+  }
+
+  .subTitle {
+    font-size: 0.9rem;
+  }
+
+  .categoryButton {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    width: 14px;
+  }
+
+  .buttonsContainer {
+    gap: 0.2rem;
+  }
+
+  .button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .paginationIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .pageButton {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}

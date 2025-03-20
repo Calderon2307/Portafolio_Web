@@ -1,0 +1,96 @@
+.buttonContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  width: 200px;
+  height: 263.06px;
+}
+
+.addBtn {
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  background-color: rgb(var(--text-light-color));
+  box-shadow: 0px 0px 15px rgb(var(--text-dark-color)) inset;
+  transition: all 250ms;
+}
+
+.addBtn:hover {
+  background-color: rgb(var(--background-color));
+  cursor: pointer;
+}
+
+.icon {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+}
+
+.addMessage {
+  font-family: var(--text-font);
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-align: center;
+  /* -webkit-text-stroke: 0.4px rgb(var(--text-dark-color)); */
+  color: rgb(var(--primary-color));
+  cursor: default;
+}
+
+@media (max-width: 1024px) {
+  .buttonContainer {
+    gap: 0.5rem;
+    width: 150px;
+    height: 200px;
+  }
+
+  .addBtn {
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+  }
+
+  .addMessage {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .buttonContainer {
+    gap: 0.5rem;
+    width: 150px;
+    height: 201.06px;
+  }
+
+  .addBtn {
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+  }
+
+  .addMessage {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .buttonContainer {
+    gap: 0.5rem;
+    width: 100px;
+    height: 142.4px;
+  }
+
+  .addBtn {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+  }
+
+  .addMessage {
+    font-size: 0.9rem;
+  }
+}

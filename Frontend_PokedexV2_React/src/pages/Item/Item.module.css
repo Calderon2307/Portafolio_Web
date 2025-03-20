@@ -1,0 +1,17 @@
+.mainSection {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@media (max-width: 1024px) {
+  .mainSection {
+    flex-flow: column nowrap;
+    background-size: 15%;
+    background-image: linear-gradient(
+        rgba(var(--background-color), 0.8),
+        rgba(var(--background-color), 0.8)
+      ),
+      url(/src/assets/styles/background.jpg);
+  }
+}

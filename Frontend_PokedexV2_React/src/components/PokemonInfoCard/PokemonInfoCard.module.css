@@ -1,0 +1,468 @@
+.cardContainer {
+  perspective: 1000px;
+}
+
+.card {
+  width: 275px;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 250ms linear;
+  margin: 0 auto;
+}
+
+.cardFront,
+.cardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: rgb(var(--primary-color));
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.cardFront {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+}
+
+.evolvesFromFlipContainer {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: -1.5rem;
+  left: -1.5rem;
+  transform-style: preserve-3d;
+  z-index: 100;
+}
+
+.evolvesFromContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 50%;
+  background-color: rgb(var(--background-color));
+  box-shadow: 0px 0px 3px rgb(var(--text-dark-color)) inset;
+  backface-visibility: hidden;
+}
+
+.evolvesFromFront {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.evolvesFromBack {
+  transform: rotateY(180deg);
+  z-index: 1;
+  background-color: rgb(var(--primary-color));
+}
+
+.evolvesFromSprite {
+  width: 90%;
+  object-fit: contain;
+}
+
+.spriteContainer {
+  width: 100%;
+  height: 50%;
+  padding: 0.2rem;
+  position: relative;
+  background-color: rgb(var(--background-color));
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.numberShinyWrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.5rem;
+}
+
+.pokedexID {
+  font-family: var(--title-font);
+  font-weight: 700;
+  -webkit-text-stroke: rgb(var(--background-color));
+  color: rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.sprite {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.shinyGlow:hover {
+  animation: iconGlow 1.5s infinite;
+}
+
+.pokemonInfo {
+  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  padding: 0.5rem;
+  background-color: rgb(var(--primary-color));
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.nameShinySection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-family: var(--title-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: rgb(var(--text-light-color));
+}
+
+.card:hover .name {
+  animation: titleBounce 1s infinite;
+}
+
+.shinyButton {
+  min-width: 50px;
+  height: 1.5rem;
+  padding: 0;
+  position: relative;
+  border: 1px solid rgb(var(--text-dark-color));
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.toggleShiny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0%;
+  width: 1.5rem;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(var(--bacground-color));
+  box-shadow: 0px 0px 5px rgb(var(--text-dark-color)) inset;
+  transition: all 250ms;
+}
+
+.shinyIcon {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.meaningSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameMeaning {
+  font-family: var(--text-font);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: rgb(var(--text-light-color));
+  cursor: default;
+}
+
+.dimensionsSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dimension {
+  font-family: var(--text-font);
+  color: rgb(var(--text-light-color));
+  text-align: center;
+  line-height: 50%;
+  cursor: default;
+}
+
+.dimensionTitle {
+  font-weight: 700;
+}
+
+.typesSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.type {
+  width: 100px;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(var(--text-dark-color));
+  font-family: var(--type-font);
+  text-align: center;
+  text-shadow: 0px 0px 3px rgb(var(--text-dark-color));
+  cursor: default;
+}
+
+.shinyActive {
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: rgb(var(--POKEDEX-color));
+}
+
+.shinyDisabled {
+  left: 0%;
+}
+
+.shinyIconSprite {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.showShinySprite {
+  animation:
+    iconShow 250ms linear 1,
+    iconGlow 1.5s infinite;
+}
+
+.hideShinySprite {
+  animation: iconHide 250ms linear 1;
+}
+
+.rotateCard {
+  transform: rotateY(360deg);
+}
+
+/*MEDIUM SIZE*/
+.card--medium {
+  width: 200px;
+  height: 250px;
+}
+
+.evolvesFromFlipContainer--medium {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: -1rem;
+  left: -1rem;
+}
+
+.spriteContainer--medium {
+  width: 100%;
+  height: 50%;
+  padding: 0.2rem;
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.numberShinyWrapper--medium {
+  right: 0.5rem;
+}
+
+.pokedexID--medium {
+  font-size: 0.7rem;
+}
+
+.shinyIconSprite--medium {
+  width: 16px;
+  height: 16px;
+}
+
+.pokemonInfo--medium {
+  padding: 0.3rem;
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.name--medium {
+  font-size: 1rem;
+}
+
+.shinyButton--medium {
+  min-width: 35px;
+  height: 1.2rem;
+  padding: 0;
+}
+
+.toggleShiny--medium {
+  width: 1.2rem;
+  box-shadow: 0px 0px 5px rgb(var(--text-dark-color)) inset;
+}
+
+.nameMeaning--medium {
+  font-size: 1rem;
+}
+
+.dimensionsSection--medium {
+  gap: 0.5rem;
+}
+
+.dimension--medium {
+  font-size: 0.8rem;
+}
+
+.typesSection--medium {
+  gap: 0.5rem;
+}
+
+.type--medium {
+  width: 75px;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+/*SMALL SIZE*/
+.card--small {
+  width: 175px;
+  height: 225px;
+}
+
+.evolvesFromFlipContainer--small {
+  width: 2rem;
+  height: 2rem;
+  top: 0rem;
+  left: 0rem;
+}
+
+.spriteContainer--small {
+  width: 100%;
+  height: 50%;
+  padding: 0.2rem;
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.numberShinyWrapper--small {
+  right: 0.5rem;
+}
+
+.pokedexID--small {
+  font-size: 0.6rem;
+}
+
+.shinyIconSprite--small {
+  width: 16px;
+  height: 16px;
+}
+
+.pokemonInfo--small {
+  padding: 0.3rem;
+  box-shadow: 0px 0px 10px rgb(var(--text-dark-color)) inset;
+}
+
+.name--small {
+  font-size: 0.8rem;
+}
+
+.shinyButton--small {
+  min-width: 30px;
+  height: 1.2rem;
+  padding: 0;
+}
+
+.toggleShiny--small {
+  width: 1.2rem;
+  box-shadow: 0px 0px 5px rgb(var(--text-dark-color)) inset;
+}
+
+.nameMeaning--small {
+  font-size: 0.8rem;
+}
+
+.dimensionsSection--small {
+  gap: 0.2rem;
+}
+
+.dimension--small {
+  font-size: 0.6rem;
+}
+
+.typesSection--medium {
+  gap: 1rem;
+}
+
+.type--small {
+  width: 50px;
+  padding: 0.2rem;
+  font-size: 0.7rem;
+}
+
+@keyframes iconShow {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes iconHide {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 0;
+  }
+}
+
+@keyframes cardRotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(720deg);
+  }
+}
+
+@keyframes titleBounce {
+  0% {
+    /* scale: 1; */
+    text-shadow: 0px 0px 0px rgb(var(--text-light-color));
+  }
+  50% {
+    /* scale: 0.9; */
+    text-shadow: 0px 0px 3px rgb(var(--text-light-color));
+  }
+  100% {
+    /* scale: 1; */
+    text-shadow: 0px 0px 0px rgb(var(--text-light-color));
+  }
+}
+
+@keyframes iconGlow {
+  0% {
+    filter: drop-shadow(0px 0px 0px rgb(var(--POKEDEX-color)));
+  }
+  25% {
+    filter: drop-shadow(0px 0px 2px rgb(var(--POKEDEX-color)));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 5px rgb(var(--POKEDEX-color)));
+  }
+  75% {
+    filter: drop-shadow(0px 0px 2px rgb(var(--POKEDEX-color)));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px rgb(var(--POKEDEX-color)));
+  }
+}
