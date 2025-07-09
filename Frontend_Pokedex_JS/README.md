@@ -19,7 +19,7 @@ El proyecto "Pokedex" es una aplicación desarrollada en JavaScript que proporci
 6. **Pagina de cadaPokemon:** Al hacer click en alguna card, se muestra la informacion mas a detalle de este pokemon, incluyendo entradas del mismo de pokedex aleatorias cada que se recarga la pagina, cadena evolutiva y otras formas del mismo Pokemon.
 
 Esta Pokedex ofrece a los amantes de Pokémon una plataforma interactiva y completa para explorar y conocer más sobre sus criaturas favoritas.
-quien encuentre este comment se la come
+
 ## Capturas de Pantalla
 
 ![Captura de pantalla 1](./screenshots/Captura1.png)
@@ -67,3 +67,4 @@ quien encuentre este comment se la come
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 11: The Space](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_The-Space): Contiene el código y recursos relacionados con el Proyecto 11.
 - [Proyecto 12: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
+- [Proyecto 13: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
