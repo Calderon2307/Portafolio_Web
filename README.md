@@ -1,28 +1,26 @@
 # Portafolio de Desarrollo Web
 
-¡Bienvenido a mi portafolio en GitHub! Este repositorio es una recopilación de los proyectos más destacados que realicé durante mi curso de Programación Web. Cada proyecto representa un hito en mi aprendizaje y desarrollo como desarrollador web.
+¡Bienvenido a mi portafolio en GitHub! Este repositorio es una recopilación de los proyectos más destacados que realicé durante mi aprendizaje sobre Programación Web. Cada proyecto representa un hito en mi aprendizaje y desarrollo como desarrollador web fullstack.
 
 ## Proyectos Destacados
 
-- [Proyecto 1: Sabores en Reserva](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Proyecto_Sabores-En-Reserva_React)
+- [Proyecto 1: Pokedex-V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React)
 
-  - Este proyecto fue realizado como proyecto final para el curso de "Programacion Web", consiste en una pagina web sobre recetas en las que los usuarios podran visualizar las recetas creadas por otros usuarios y asi mismo crear recetas.
+  - Este proyecto es una mejora al proyecto "[Pokedex](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS)", utilizando React con Typescript para crear la interfaz de usuario y Axios para las peticiones a la Poke Api, es una mejora en cuanto a la UI y UX, agregando tambien un apartado para poder crear equipos de Pokémon.
     Tecnologias utilizadas:
     - Html
     - CSS
-    - JaaScript
-    - React jsx
-    - Formik (gestion de formularios)
+    - TypeScript
+    - React tsx
     - Yarn
     - Vite
 
-- [Proyecto 2: Pokedex](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS)
+- [Proyecto 2: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe)
 
-  - Una pokedex haciendo uso de la "Poke-api" para obtener la informacion sobre los Pokemon.
+  - Backend funcoinal con seguridad y JWT para la aplicacion "Task Me" de forma academica, presentado para un proyecto de la materia "N Capas".
     Tecnologias utilizadas:
-    - HTML
-    - CSS
-    - JavaScript
+    - Java
+    - Spring Boot
 
 - [Proyecto 3: NASA API con React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Nasa-API_React)
 
@@ -74,6 +72,8 @@ Este repositorio está organizado de la siguiente manera:
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 11: The Space](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_The-Space): Contiene el código y recursos relacionados con el Proyecto 11.
 - [Proyecto 12: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
+- [Proyecto 13: Pokedex - V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React): Contiene el código y recursos relacionados con el Proyecto 13.
+- [Proyecto 14: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe): Contiene el código y recursos relacionados con el Proyecto 14.
 
 ## Instrucciones de Navegación
 
@@ -114,4 +114,3 @@ Estoy emocionado por seguir creciendo y enfrentar nuevos retos. ¡Conectemos y e
 Este repositorio es una colección de proyectos desarrollados durante mi curso de Programación Web. Cada proyecto tiene un enlace directo a su repositorio individual, donde puedes revisar el historial de commits y observar el progreso a lo largo del tiempo.
 
 ¡Gracias por visitar mi portafolio! 🚀
-Frontend_Create-Elements
