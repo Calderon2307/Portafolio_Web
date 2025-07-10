@@ -6,7 +6,7 @@
 
 - [Proyecto 1: Pokedex-V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React)
 
-  - Este proyecto es una mejora al proyecto "[Pokedex](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS)", utilizando React con Typescript para crear la interfaz de usuario y Axios para las peticiones a la Poke Api, es una mejora en cuanto a la UI y UX, agregando tambien un apartado para poder crear equipos de Pokémon.
+  - Este proyecto es una mejora al proyecto "[Pokedex](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS)", utilizando React con Typescript para crear la interfaz de usuario y Axios para las peticiones a la Poke Api, es una mejora en cuanto a la UI y UX, agregando tambien un apartado para poder crear equipos de Pokémon.<br/>
     Tecnologias utilizadas:
     - Html
     - CSS
@@ -17,14 +17,14 @@
 
 - [Proyecto 2: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe)
 
-  - Backend funcoinal con seguridad y JWT para la aplicacion "Task Me" de forma academica, presentado para un proyecto de la materia "N Capas".
+  - Backend funcoinal con seguridad y JWT para la aplicacion "Task Me" de forma academica, presentado para un proyecto de la materia "N Capas".<br/>
     Tecnologias utilizadas:
     - Java
     - Spring Boot
 
 - [Proyecto 3: NASA API con React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Nasa-API_React)
 
-  - Pagina para consumir la API de la NASA y mostrar las imagenes en un periodo de fechas, una fecha en concreto y una imagen al azar.
+  - Pagina para consumir la API de la NASA y mostrar las imagenes en un periodo de fechas, una fecha en concreto y una imagen al azar.<br/>
     Tecnologias utilizadas:
 
     - HTML
