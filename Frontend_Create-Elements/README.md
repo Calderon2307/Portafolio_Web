@@ -13,6 +13,7 @@ El proyecto de Registro de Equipos de Fútbol es una aplicación web que permite
 
 <p align="center">
     <a href="https://skillicons.dev" title="HTML">
+        HTML
         <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
     </a>
     <a href="https://skillicons.dev" title="CSS">
