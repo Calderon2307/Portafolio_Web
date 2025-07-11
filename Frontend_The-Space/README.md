@@ -14,13 +14,21 @@
 
 ## Tecnologías Utilizadas
 
-- HTML
-- CSS
-- SASS (SCSS)
+<p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="SCSS">
+        <img src="https://skillicons.dev/icons?i=sass" alt="SASS"/>
+    </a>
+</p>
 
 ## Instrucciones de Instalación
 
-- Clonar el repositorio "https://github.com/Calderon2307/Portafolio_Web"
+- Clonar el repositorio "[https://github.com/Calderon2307/Portafolio_Web](https://github.com/Calderon2307/Portafolio_Web)".
 - Acceder a la carpeta "Frontend_The-Space".
 - Abrir el archivo "index.html" en el navegador.
 
@@ -37,3 +45,5 @@
 - [Proyecto 9: Questions API JS](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_JS): Contiene el código y recursos relacionados con el Proyecto 9.
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 12: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
+- [Proyecto 13: Pokedex - V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React): Contiene el código y recursos relacionados con el Proyecto 13.
+- [Proyecto 14: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe): Contiene el código y recursos relacionados con el Proyecto 14.
