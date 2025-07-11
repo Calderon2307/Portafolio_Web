@@ -81,29 +81,21 @@ Para explorar diferentes proyectos, navega a las carpetas correspondientes y exp
 
 ## Acerca de Mí
 
-🚀 𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 | 𝗘𝘀𝘁𝘂𝗱𝗶𝗮𝗻𝘁𝗲 𝗔𝗽𝗮𝘀𝗶𝗼𝗻𝗮𝗱𝗼 𝗱𝗲 𝗜𝗻𝗴𝗲𝗻𝗶𝗲𝗿𝗶́𝗮 𝗜𝗻𝗳𝗼𝗿𝗺𝗮́𝘁𝗶𝗰𝗮 🚀
+🚀 Desarrollador Fullstack (React, TypeScript & Spring Boot) | Android Developer con Kotlin & Jetpack Compose | Estudiante de Ingeniería Informática 🚀
 
-¡Hola! Soy un estudiante de Ingeniería Informática en la UCA, con un enfoque apasionado en el desarrollo web. Mi viaje en el front-end refleja un compromiso sólido con la excelencia y la estética web.
+Soy estudiante de Ingeniería Informática en la UCA, con perfil fullstack especializado en desarrollo web con React y TypeScript, y backend con Spring Boot. También tengo experiencia en el desarrollo de aplicaciones Android utilizando Kotlin y Jetpack Compose, combinando funcionalidad y diseño en cada proyecto.
 
-𝗛𝗧𝗠𝗟 𝗦𝗲𝗺𝗮́𝗻𝘁𝗶𝗰𝗼 & 𝗖𝗦𝗦 𝗠𝗮𝗲𝘀𝘁𝗿𝗼:
-Dominio preciso de HTML con enfoque semántico, creando estructuras que no solo funcionan sino que también aportan peso significativo a la web. En CSS, no solo es una habilidad, es una especialización; soy un "Maestro en CSS" con una certificación de Udemy, y mi búsqueda continua de conocimientos se traduce en estilos que elevan la experiencia del usuario.
+💡 Stack principal:
 
-𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 𝗔𝘃𝗮𝗻𝘇𝗮𝗱𝗼:
-Desde manipulación del DOM hasta el consumo experto de API's REST, mi experiencia en JavaScript va más allá. Soy un entusiasta de React y su potencial creativo, implementando proyectos con JSX, Yarn y Vite.
+Frontend: React, TypeScript, SASS, Bootstrap, Tailwind.
 
-𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸𝘀 𝗖𝗦𝗦 𝘆 𝗛𝗲𝗿𝗿𝗮𝗺𝗶𝗲𝗻𝘁𝗮𝘀:
-He trabajado con SASS (SCSS), y tengo conocimientos en Bootstrap y Tailwind para potenciar aún más el diseño y la interactividad.
+Backend: Spring Boot, Node.js, Express.
 
-𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝗲𝗻 𝗔𝘀𝗰𝗲𝗻𝘀𝗼:
-Aunque estoy construyendo mi camino en el backend, ya tengo bases en la construcción de API's REST con Express.js y Node.js, siempre con el toque de Yarn.
+Mobile: Kotlin, Jetpack Compose.
 
-𝗣𝗿𝗼𝘆𝗲𝗰𝘁𝗼𝘀 𝗨𝗻𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝗮𝗿𝗶𝗼𝘀 𝗜𝗺𝗽𝗮𝗰𝘁𝗮𝗻𝘁𝗲𝘀:
-Mi entorno universitario ha sido un terreno fértil para la creatividad. Puedes explorar mis proyectos en sus repositorios de GitHub, cada uno es una muestra tangible de habilidades y dedicación.
+Control de versiones: Git & GitHub.
 
-𝗠𝗮́𝘀 𝗔𝗹𝗹𝗮́ 𝗱𝗲 𝗹𝗼𝘀 𝗟𝗲𝗻𝗴𝘂𝗮𝗷𝗲𝘀:
-No me limito a un solo lenguaje; tengo conocimientos en C/C++ y Java, manteniéndome al tanto de las últimas tecnologías en el mundo del desarrollo web.
-
-Estoy emocionado por seguir creciendo y enfrentar nuevos retos. ¡Conectemos y exploremos juntos el vasto mundo del desarrollo web! 🌐💻
+He trabajado en proyectos académicos y personales disponibles en mis repositorios, donde aplico buenas prácticas, UI moderna y enfoque en experiencia de usuario. Mi objetivo es seguir creciendo como desarrollador fullstack, construyendo soluciones funcionales y atractivas.
 
 ## Cómo Contactarme
 
