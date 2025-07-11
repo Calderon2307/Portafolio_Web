@@ -13,20 +13,16 @@ El proyecto de Registro de Equipos de Fútbol es una aplicación web que permite
 
 <p align="center">
     <a href="https://skillicons.dev" title="HTML">
-        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/><br/>
-        HTML
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
     </a>
     <a href="https://skillicons.dev" title="CSS">
-        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/><br/>
-        CSS
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
     </a>
     <a href="https://skillicons.dev" title="SCSS">
-        <img src="https://skillicons.dev/icons?i=sass" alt="SASS"/><br/>
-        SCSS
+        <img src="https://skillicons.dev/icons?i=sass" alt="SASS"/>
     </a>
     <a href="https://skillicons.dev" title="JavaScript">
-        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/><br/>
-        JAVASCRIPT
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
     </a>
 </p>
 
