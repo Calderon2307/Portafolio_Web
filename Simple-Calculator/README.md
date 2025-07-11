@@ -15,13 +15,21 @@ Este proyecto es ideal para aquellos que buscan una herramienta sencilla y funci
 
 ## Tecnologías Utilizadas
 
-- HTML
-- CSS
-- JavaScript
+<p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="JavaScript">
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+    </a>
+</p>
 
 ## Instrucciones de Instalación
 
-- Clonar el repositorio "https://github.com/Calderon2307/Portafolio_Web"
+- Clonar el repositorio "[https://github.com/Calderon2307/Portafolio_Web](https://github.com/Calderon2307/Portafolio_Web)".
 - Acceder a la carpeta "Simple-Calculator".
 - Abrir el archivo "index.html" en el navegador.
 
@@ -38,3 +46,5 @@ Este proyecto es ideal para aquellos que buscan una herramienta sencilla y funci
 - [Proyecto 9: Questions API JS](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_JS): Contiene el código y recursos relacionados con el Proyecto 9.
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 11: The Space](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_The-Space): Contiene el código y recursos relacionados con el Proyecto 11.
+- [Proyecto 13: Pokedex - V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React): Contiene el código y recursos relacionados con el Proyecto 13.
+- [Proyecto 14: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe): Contiene el código y recursos relacionados con el Proyecto 14.
