@@ -11,14 +11,24 @@ El proyecto de Registro de Equipos de Fútbol es una aplicación web que permite
 
 ## Tecnologías Utilizadas
 
-- HTML
-- CSS
-- SASS
-- JavaScript
+<p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="SCSS">
+        <img src="https://skillicons.dev/icons?i=sass" alt="SASS"/>
+    </a>
+    <a href="https://skillicons.dev" title="JavaScript">
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+    </a>
+</p>
 
 ## Instrucciones de Instalación
 
-- Clonar el repositorio "https://github.com/Calderon2307/Portafolio_Web".
+- Clonar el repositorio "[https://github.com/Calderon2307/Portafolio_Web](https://github.com/Calderon2307/Portafolio_Web)".
 - Acceder a la carpeta "Frontend_Create-Elements".
 - Abrir el archivo "index.html" en un navegador web para visualizar.
 
@@ -35,3 +45,5 @@ El proyecto de Registro de Equipos de Fútbol es una aplicación web que permite
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 11: The Space](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_The-Space): Contiene el código y recursos relacionados con el Proyecto 11.
 - [Proyecto 12: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
+- [Proyecto 13: Pokedex - V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React): Contiene el código y recursos relacionados con el Proyecto 13.
+- [Proyecto 14: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe): Contiene el código y recursos relacionados con el Proyecto 14.
