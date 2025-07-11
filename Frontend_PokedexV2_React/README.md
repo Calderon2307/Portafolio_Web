@@ -48,34 +48,29 @@ Esta version de la Pokedex es mas robusta y permite funcioalidades que no estaba
 
 ## Tecnologias Utilizadas
 
-- HTML
-  <a href="https://skillicons.dev" title="HTML" target="_blank">
-  <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+<p align="center">
+  <a href="https://skillicons.dev" title="HTML">
+    <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
   </a>
-- CSS
-  <a href="https://skillicons.dev" title="CSS" target="_blank">
-  <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+  <a href="https://skillicons.dev" title="CSS">
+    <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
   </a>
-- JavaScript
-  <a href="https://skillicons.dev" title="JS" target="_blank">
-  <img src="https://skillicons.dev/icons?i=js" alt="JS" />
+  <a href="https://skillicons.dev" title="JavaScript">
+    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
   </a>
-- TypeScript
-  <a href="https://skillicons.dev" title="TS" target="_blank">
-  <img src="https://skillicons.dev/icons?i=ts" alt="TS" />
+  <a href="https://skillicons.dev" title="TypeScript">
+    <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"/>
   </a>
-- React
-  <a href="https://skillicons.dev" title="React TSX" target="_blank">
-  <img src="https://skillicons.dev/icons?i=react" alt="React" />
+  <a href="https://skillicons.dev" title="React TSX">
+    <img src="https://skillicons.dev/icons?i=react" alt="React"/>
   </a>
-- Vite
-  <a href="https://skillicons.dev" title="Vite" target="_blank">
-  <img src="https://skillicons.dev/icons?i=vite" alt="Vite" />
+  <a href="https://skillicons.dev" title="Yarn">
+    <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn"/>
   </a>
-- Yarn
-  <a href="https://skillicons.dev" title="Yarn" target="_blank">
-  <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn" />
+  <a href="https://skillicons.dev" title="Vite">
+    <img src="https://skillicons.dev/icons?i=vite" alt="Vite"/>
   </a>
+</p>
 
 ## Instrucciones de Instalación
 
