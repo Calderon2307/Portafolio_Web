@@ -14,13 +14,21 @@ La aplicación lleva un conteo en tiempo real de las preguntas respondidas corre
 
 ## Tecnologías Utilizadas
 
-- HTML
-- CSS
-- JavaScript
+<p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="JavaScript">
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+    </a>
+</p>
 
 ## Instrucciones de Instalación
 
-- Clonar el repositorio "https://github.com/Calderon2307/Portafolio_Web".
+- Clonar el repositorio "[https://github.com/Calderon2307/Portafolio_Web](https://github.com/Calderon2307/Portafolio_Web)".
 - Acceder a la carpeta "Frontend_Questions_API_JS"
 - Abrir el archivo "index.html" en el navegador.
 
@@ -37,3 +45,5 @@ La aplicación lleva un conteo en tiempo real de las preguntas respondidas corre
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 11: The Space](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_The-Space): Contiene el código y recursos relacionados con el Proyecto 11.
 - [Proyecto 12: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
+- [Proyecto 13: Pokedex - V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React): Contiene el código y recursos relacionados con el Proyecto 13.
+- [Proyecto 14: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe): Contiene el código y recursos relacionados con el Proyecto 14.
