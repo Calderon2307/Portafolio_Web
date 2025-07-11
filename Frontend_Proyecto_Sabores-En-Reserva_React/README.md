@@ -46,16 +46,30 @@ Esta interfaz de usuario espera integrarse con el backend para ofrecer una plata
 
 ## Tecnologías Utilizadas
 
-- HTML
-- CSS
-- JacaScript
-- React JSX
-- Yarn
-- Vite
+<p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="JavaScript">
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+    </a>
+    <a href="https://skillicons.dev" title="React JSX">
+        <img src="https://skillicons.dev/icons?i=react" alt="React"/>
+    </a>
+    <a href="https://skillicons.dev" title="Yarn">
+        <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn"/>
+    </a>
+    <a href="https://skillicons.dev" title="Vite">
+        <img src="https://skillicons.dev/icons?i=vite" alt="Vite"/>
+    </a>
+</p>
 
 ## Instrucciones de Instalación
 
-- Clonar el repositorio "https://github.com/Calderon2307/Portafolio_Web".
+- Clonar el repositorio "[https://github.com/Calderon2307/Portafolio_Web](https://github.com/Calderon2307/Portafolio_Web)".
 - Acceder a la carpeta "Frontend_Proyecto_Sabores-En-Reserva".
 - Abrir el proyecto en una terminal.
 - Installar yarn mediante el comando "yarn install".
@@ -80,3 +94,5 @@ Para poder visualizar el historial de commits visitar [este link](https://github
 - [Proyecto 10: Questions API React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React): Contiene el código y recursos relacionados con el Proyecto 10.
 - [Proyecto 11: The Space](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_The-Space): Contiene el código y recursos relacionados con el Proyecto 11.
 - [Proyecto 12: Simple Calculator](https://github.com/Calderon2307/Portafolio_Web/tree/main/Simple-Calculator): Contiene el código y recursos relacionados con el Proyecto 12.
+- [Proyecto 13: Pokedex - V2](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_PokedexV2_React): Contiene el código y recursos relacionados con el Proyecto 13.
+- [Proyecto 14: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe): Contiene el código y recursos relacionados con el Proyecto 14.
