@@ -2,6 +2,8 @@
 
 ## Descripción del Proyecto
 
+Task Me es una aplicacion que ayuda a pequeños emprendedores, personas que conocen de algun oficio o simplemente quieren tener un ingreso extra
+
 ## Capturas de pantalla
 
 ## Tecnologias Utilizadas
