@@ -1,6 +1,6 @@
 # Portafolio de Desarrollo Web
 
-¡Bienvenido a mi portafolio en GitHub! Este repositorio es una recopilación de los proyectos más destacados que realicé durante mi aprendizaje sobre Programación Web. Cada proyecto representa un hito en mi aprendizaje y desarrollo como desarrollador web fullstack.
+¡Bienvenido a mi portafolio en GitHub! Este repositorio es una recopilación de los proyectos más destacados que realizo durante mi aprendizaje sobre Programación Web. Cada proyecto representa un hito en mi aprendizaje y desarrollo como desarrollador web fullstack.
 
 ## Proyectos Destacados
 
@@ -8,59 +8,174 @@
 
   - Este proyecto es una mejora al proyecto "[Pokedex](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Pokedex_JS)", utilizando React con Typescript para crear la interfaz de usuario y Axios para las peticiones a la Poke Api, es una mejora en cuanto a la UI y UX, agregando tambien un apartado para poder crear equipos de Pokémon.<br/>
     Tecnologias utilizadas:
-    - Html
-    - CSS
-    - TypeScript
-    - React tsx
-    - Yarn
-    - Vite
+
+  <p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+      <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+      <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="TypeScript">
+      <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"/>
+    </a>
+    <a href="https://skillicons.dev" title="React TSX">
+      <img src="https://skillicons.dev/icons?i=react" alt="React"/>
+    </a>
+    <a href="https://skillicons.dev" title="Yarn">
+      <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn"/>
+    </a>
+    <a href="https://skillicons.dev" title="Vite">
+      <img src="https://skillicons.dev/icons?i=vite" alt="Vite"/>
+    </a>
+  </p>
 
 - [Proyecto 2: Task Me! - Backend](https://github.com/Calderon2307/Portafolio_Web/tree/main/Backend_TaskMe)
 
-  - Backend funcoinal con seguridad y JWT para la aplicacion "Task Me" de forma academica, presentado para un proyecto de la materia "N Capas".<br/>
+  - Backend funcoinal con seguridad y JWT para la aplicacion "Task Me" (proyecto personal) de forma academica, presentado como proyecto final de la materia "N Capas".<br/>
     Tecnologias utilizadas:
-    - Java
-    - Spring Boot
+
+  <p align="center">
+    <a href="https://skillicons.dev" title="Java">
+      <img src="https://skillicons.dev/icons?i=java" alt="Java"/>
+    </a>
+    <a href="https://skillicons.dev" title="Postgre SQLS">
+      <img src="https://skillicons.dev/icons?i=postgres" alt="Postgre SQL"/>
+    </a>
+    <a href="https://skillicons.dev" title="Spring Boot">
+      <img src="https://skillicons.dev/icons?i=spring" alt="Spring Boot"/>
+    </a>
+  </p>
 
 - [Proyecto 3: NASA API con React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Nasa-API_React)
 
   - Pagina para consumir la API de la NASA y mostrar las imagenes en un periodo de fechas, una fecha en concreto y una imagen al azar.<br/>
     Tecnologias utilizadas:
 
-    - HTML
-    - CSS
-    - JavaScrip
-    - React jsx
+  <p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+      <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+      <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="JavaScript">
+      <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+    </a>
+    <a href="https://skillicons.dev" title="React JSX">
+      <img src="https://skillicons.dev/icons?i=react" alt="React"/>
+    </a>
+    <a href="https://skillicons.dev" title="Yarn">
+      <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn"/>
+    </a>
+    <a href="https://skillicons.dev" title="Vite">
+      <img src="https://skillicons.dev/icons?i=vite" alt="Vite"/>
+    </a>
+  </p>
 
-    [Proyecto realizado con JS](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Nasa-API_JS)
+  [Proyecto realizado con JS](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Nasa-API_JS)
 
 - [Proyecto 4: Trivia con React](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_React)
 
   - Una pagina de trivia que devuelve preguntas al azar mediante el consumo de OTDB (Open Trivia Database).
     Tecnologías Utilizadas:
 
-    - HTML
-    - CSS
-    - JavaScript
-    - React jsx
+  <p align="center">
+    <a href="https://skillicons.dev" title="HTML">
+      <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+    </a>
+    <a href="https://skillicons.dev" title="CSS">
+      <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+    </a>
+    <a href="https://skillicons.dev" title="JavaScript">
+      <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+    </a>
+    <a href="https://skillicons.dev" title="React JSX">
+      <img src="https://skillicons.dev/icons?i=react" alt="React"/>
+    </a>
+    <a href="https://skillicons.dev" title="Yarn">
+      <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn"/>
+    </a>
+    <a href="https://skillicons.dev" title="Vite">
+      <img src="https://skillicons.dev/icons?i=vite" alt="Vite"/>
+    </a>
+  </p>
 
-    [Proyecto realizado con JS](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_JS)
+  [Proyecto realizado con JS](https://github.com/Calderon2307/Portafolio_Web/tree/main/Frontend_Questions-API_JS)
 
 ## Tecnologías Utilizadas
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  <a href="https://skillicons.dev" title="Android Studio">
+    <img src="https://skillicons.dev/icons?i=androidstudio" alt="Android Studio"/>
+  </a>
+  <a href="https://skillicons.dev" title="Babel">
+    <img src="https://skillicons.dev/icons?i=babel" alt="Babel"/>
+  </a>
+  <a href="https://skillicons.dev" title="Bootstrap">
+    <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap"/>
+  </a>
+  <a href="https://skillicons.dev" title="CSS">
+    <img src="https://skillicons.dev/icons?i=css" alt="CSS"/>
+  </a>
+  <a href="https://skillicons.dev" title="Express">
+    <img src="https://skillicons.dev/icons?i=express" alt="Express"/>
+  </a>
+  <a href="https://skillicons.dev" title="Figma">
+    <img src="https://skillicons.dev/icons?i=figma" alt="Figma"/>
+  </a>
+  <a href="https://skillicons.dev" title="Git">
+    <img src="https://skillicons.dev/icons?i=git" alt="Git"/>
+  </a>
+  <a href="https://skillicons.dev" title="Github">
+    <img src="https://skillicons.dev/icons?i=github" alt="Github"/>
+  </a>
+  <a href="https://skillicons.dev" title="HTML">
+    <img src="https://skillicons.dev/icons?i=html" alt="HTML"/>
+  </a>
+  <a href="https://skillicons.dev" title="IntelliJ">
+    <img src="https://skillicons.dev/icons?i=idea" alt="IntelliJ"/>
+  </a>
+  <a href="https://skillicons.dev" title="Java">
+    <img src="https://skillicons.dev/icons?i=java" alt="Java"/>
+  </a>
+  <a href="https://skillicons.dev" title="JavaScript">
+    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/>
+  </a>
+  <a href="https://skillicons.dev" title="Kotlin">
+    <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin"/>
+  </a>
+  <a href="https://skillicons.dev" title="Node JS">
+    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node JS"/>
+  </a>
+  <a href="https://skillicons.dev" title="Postgre SQLS">
+    <img src="https://skillicons.dev/icons?i=postgres" alt="Postgre SQL"/>
+  </a>
+  <a href="https://skillicons.dev" title="React JSX/TSX">
+    <img src="https://skillicons.dev/icons?i=react" alt="React"/>
+  </a>
+  <a href="https://skillicons.dev" title="SCSS">
+    <img src="https://skillicons.dev/icons?i=sass" alt="SASS"/>
+  </a>
+  <a href="https://skillicons.dev" title="Spring Boot">
+    <img src="https://skillicons.dev/icons?i=spring" alt="Spring Boot"/>
+  </a>
+  <a href="https://skillicons.dev" title="Tailwind">
+    <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind"/>
+  </a>
+  <a href="https://skillicons.dev" title="TypeScript">
+    <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"/>
+  </a>
+  <a href="https://skillicons.dev" title="Vite">
+    <img src="https://skillicons.dev/icons?i=vite" alt="Vite"/>
+  </a>
+  <a href="https://skillicons.dev" title="Visual Studio Code">
+    <img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code"/>
+  </a>
+  <a href="https://skillicons.dev" title="Yarn">
+    <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn"/>
   </a>
 </p>
-
-- HTML
-- CSS
-- SCSS
-- JavaScript
-- React jsx
-- Yarn
-- Vite
 
 ## Estructura del Repositorio
 
@@ -109,6 +224,7 @@ He trabajado en proyectos académicos y personales disponibles en mis repositori
 
 ## Estado del Repositorio
 
-Este repositorio es una colección de proyectos desarrollados durante mi curso de Programación Web. Cada proyecto tiene un enlace directo a su repositorio individual, donde puedes revisar el historial de commits y observar el progreso a lo largo del tiempo.
+Este repositorio se actualiza constantemente con proyectos web que desarrollo como parte de mi formación.  
+Cada proyecto tiene su propio repositorio individual donde puedes ver el código y su evolución.
 
-¡Gracias por visitar mi portafolio! 🚀
+### ¡Gracias por visitar mi portafolio! 🚀
