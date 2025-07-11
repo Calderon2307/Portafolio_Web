@@ -4,8 +4,6 @@
 
 Task Me es una aplicacion que ayuda a pequeños emprendedores, personas que conocen de algun oficio o simplemente quieren tener un ingreso extra
 
-## Capturas de pantalla
-
 ## Tecnologias Utilizadas
 
 <p align="center">
@@ -19,6 +17,10 @@ Task Me es una aplicacion que ayuda a pequeños emprendedores, personas que cono
       <img src="https://skillicons.dev/icons?i=spring" alt="Spring Boot"/>
     </a>
 </p>
+
+## Endpoints
+
+## Ejemplos de peticiones y respuestas
 
 ## Instrucciones de Instalación
 
