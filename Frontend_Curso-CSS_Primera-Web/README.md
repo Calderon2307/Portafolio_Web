@@ -23,7 +23,6 @@ El Proyecto "Primera Web" es una iniciativa diseñada durante un curso de CSS co
 ## Instrucciones de Instalación
 
 - Clonar el repositorio "[https://github.com/Calderon2307/Portafolio_Web](https://github.com/Calderon2307/Portafolio_Web)".
-- Acceder a la carpeta "Frontend_Curso-CSS_Animaciones".
 - Acceder a la carpeta "Frontend_Curso-CSS_Primera-Web".
 - Abrir el archivo index.html en el navegador para visualizar.
 
