@@ -4,6 +4,7 @@ import {
   SearchItemContext,
   UpdateSearchItemContext,
 } from '@/contexts/SearchContext';
+import searchIcon from '@assets/icons/pokeballSolid.png';
 import style from '@components/SearchBar/SearchBar.module.css';
 
 type Props = {
@@ -51,7 +52,7 @@ const SearchBar: React.FC<Props> = ({
       {showButton && (
         <button type="submit" className={`${style.button}`} title={`Search`}>
           <img
-            src="/src/assets/icons/pokeballSolid.png"
+            src={searchIcon}
             alt="search icon"
             className={`${style.img}`}
           />

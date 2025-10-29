@@ -1,6 +1,7 @@
 import { ItemInfo } from '@models/items';
 import { capitalizeText } from '@utils/formatText';
 import notFoundSprite from '@assets/icons/Not_Found_Sprite_Alt.gif';
+import pokeDollarIcon from '@assets/icons/pokeDollar.png';
 import style from '@components/ItemSummary/ItemSummary.module.css';
 
 type ItemSummaryInfo = Pick<
@@ -75,7 +76,7 @@ const ItemSummary: React.FC<ItemSummaryInfo> = ({
             <span className={`${style.contentWrapper}`}>
               {cost}
               <img
-                src="/src/assets/icons/pokeDollar.png"
+                src={pokeDollarIcon}
                 alt="Pokedollar Icon"
                 className={`${style.icon}`}
               />

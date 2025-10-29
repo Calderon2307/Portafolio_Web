@@ -20,6 +20,8 @@ import {
 import { fetchItemsByCategory } from '@services/ItemServices/itemCategoryService';
 import prevIcon from '@assets/icons/prevLight.png';
 import nextIcon from '@assets/icons/nextLight.png';
+import closeIcon from '@assets/icons/closeDark.png';
+import filterIcon from '@assets/icons/filterAlt2.png';
 import faviconIcon from '@assets/icons/Favicon.png';
 import style from '@pages/SearchItem/SearchItem.module.css';
 //import { itemsCards } from '@data/item.test';
@@ -263,7 +265,7 @@ const SearchItem = () => {
             title="Close Dialog"
           >
             <img
-              src="/src/assets/icons/closeDark.png"
+              src={closeIcon}
               alt="Close Dialog Icon"
               className={`${style.closeIcon}`}
             />
@@ -300,7 +302,7 @@ const SearchItem = () => {
             >
               Categories
               <img
-                src="/src/assets/icons/filterAlt2.png"
+                src={filterIcon}
                 alt="Filter Icon"
                 className={`${style.icon}`}
               />

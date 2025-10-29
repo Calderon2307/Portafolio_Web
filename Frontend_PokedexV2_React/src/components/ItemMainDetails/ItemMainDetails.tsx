@@ -1,6 +1,10 @@
 import { useState, useRef } from 'react';
 import { ItemInfo } from '@models/items';
 import { capitalizeText } from '@utils/formatText';
+import pokeballIcon from '@assets/icons/pokeballSolid.png';
+import effectIcon from '@assets/icons/effect.png';
+import attributesIcon from '@assets/icons/attributes.png';
+import tcgIcon from '@assets/icons/tcgSolid.png';
 import style from '@components/ItemMainDetails/ItemMainDetails.module.css';
 
 type ItemDetails = Pick<
@@ -67,7 +71,7 @@ const ItemMainDetails: React.FC<ItemDetails> = ({
           <div className={`${style.titleWrapper}`}>
             <h3 className={`${style.itemDescriptionTitle}`}>Description</h3>
             <img
-              src="/src/assets/icons/pokeballSolid.png"
+              src={pokeballIcon}
               alt="Pokeball Icon"
               className={`${style.icon}`}
             />
@@ -81,7 +85,7 @@ const ItemMainDetails: React.FC<ItemDetails> = ({
           <div className={`${style.titleWrapper}`}>
             <h3 className={`${style.itemEffectTitle}`}>Effect</h3>
             <img
-              src="/src/assets/icons/effect.png"
+              src={effectIcon}
               alt="Effect Icon"
               className={`${style.icon}`}
             />
@@ -95,7 +99,7 @@ const ItemMainDetails: React.FC<ItemDetails> = ({
           <div className={`${style.titleWrapper}`}>
             <h3 className={`${style.itemAttributesTitle}`}>Attributes</h3>
             <img
-              src="/src/assets/icons/attributes.png"
+              src={attributesIcon}
               alt="Attributes Icon"
               className={`${style.icon}`}
             />
@@ -131,7 +135,7 @@ const ItemMainDetails: React.FC<ItemDetails> = ({
               {itemNameFormat} TCG Cards
             </h3>
             <img
-              src="/src/assets/icons/tcgSolid.png"
+              src={tcgIcon}
               alt="TCG Icon"
               className={`${style.icon}`}
             />
