@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import Footer from '@/components/Footer/Footer';
+// import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import faviconIcon from '@assets/icons/Favicon.png';
 import style from '@pages/Home/Home.module.css';
@@ -56,7 +56,7 @@ const Home = (): JSX.Element => {
             </Link>
           </section>
         </div>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     </>
   );
